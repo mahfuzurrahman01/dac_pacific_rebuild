@@ -14,6 +14,7 @@ import axios from "axios";
 import StatsCard from "@/Components/Stats/StatsCard";
 import Blog from "@/Components/Blog/Blog";
 import Touch from "@/Components/GetTouch/Touch";
+import ContactForm from "@/Components/Contact/ContactForm";
 export default function Home() {
   const [toggle, setToggle] = useState<number>(1);
   const toggleHandle = (num: number) => {
@@ -164,7 +165,7 @@ export default function Home() {
         <Blog />
       </div>
       <Touch />
-      
+      <ContactForm />
     </main>
   );
 }
