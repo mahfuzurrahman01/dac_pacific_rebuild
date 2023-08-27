@@ -20,7 +20,7 @@ const BlogCard = () => {
           className="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover bg-gray-700 lg:col-span-6 lg:h-auto"
           style={backgroundImageStyle}
         ></div>
-        <div className="col-span-12 align-middle lg:col-span-6 lg:h-auto flex flex-col justify-center items-center px-5 py-10">
+        <div className="col-span-12 align-middle lg:col-span-6 lg:h-auto flex flex-col justify-center items-center px-5 py-24">
           <h2 className="uppercase font-bold text-xl " style={myFont.style}>
             KNOW MORE ABOUT OUR COMPANY
           </h2>

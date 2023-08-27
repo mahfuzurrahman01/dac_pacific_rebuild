@@ -16,9 +16,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // const backgroundImageStyle = {
+  //   backgroundImage:
+  //     "url('https://www.apparelentrepreneurship.com/wp-content/uploads/2023/01/How-To-Make-Your-Clothing-Brand-Stand-Out-In-A-Competitive-Market.jpg')",
+
+  //   backgroundBlendMode: "",
+  //   backgroundSize: "cover",
+  //   backgroundRepeat: "repeat",
+  //   backgroundPosition: "center",
+  // };
+
   return (
     <html lang="en">
-      <body>
+      <body >
         <Navbar />
         {children}
         <Footer />
