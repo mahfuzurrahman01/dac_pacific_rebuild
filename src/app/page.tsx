@@ -9,39 +9,45 @@ import { BsBriefcaseFill, BsSendCheckFill } from "react-icons/bs";
 import { IoIosSettings } from "react-icons/io";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import BlogCard from "@/Components/Cards/BlogCard";
+import axios from "axios";
 export default function Home() {
   const [toggle, setToggle] = useState<number>(1);
   const toggleHandle = (num: number) => {
     setToggle(num);
   };
+
   return (
-    <main className="relative">
-      <Carousel
-        autoPlay
-        infiniteLoop
-        transitionTime={1000}
-        interval={5000}
-        showStatus={false}
-        className="w-full"
-      >
-        <div className="w-full h-[700px]">
-          <Image alt="banner" src={banner1} className="brightness-50" />
+    <main>
+      <div className="relative">
+        <Carousel
+          showThumbs={false}
+          autoPlay
+          infiniteLoop
+          transitionTime={1000}
+          interval={5000}
+          showStatus={false}
+          className="w-full"
+        >
+          <div className="w-full h-[700px]">
+            <Image alt="banner" src={banner1} className="brightness-75" />
+          </div>
+          <div className="w-full h-[700px]">
+            <Image alt="banner" src={banner2} className="brightness-75" />
+          </div>
+          <div className="w-full h-[700px]">
+            <Image alt="banner" src={banner3} className="brightness-75" />
+          </div>
+        </Carousel>
+        {/* absolute div for showing in banner   */}
+        <div className="text-center absolute top-[40%] left-[20%] text-white">
+          <h1 className="text-6xl font-bold text-white">
+            WELCOME TO <span className="text-cyan-500">DAC</span> PACIFIC LTD
+          </h1>
+          <h1 className="text-3xl font-semibold mt-2">
+            OPERATION AND MONITORING WITH EXPERIENCE
+          </h1>
         </div>
-        <div className="w-full h-[700px]">
-          <Image alt="banner" src={banner2} className="brightness-50" />
-        </div>
-        <div className="w-full h-[700px]">
-          <Image alt="banner" src={banner3} className="brightness-50" />
-        </div>
-      </Carousel>
-      {/* absolute div for showing in banner   */}
-      <div className="text-center absolute top-[40%] left-[20%] text-white">
-        <h1 className="text-6xl font-bold text-white">
-          WELCOME TO <span className="text-green-500">DAC</span> PACIFIC LTD
-        </h1>
-        <h1 className="text-3xl font-semibold mt-2">
-          OPERATION AND MONITORING WITH EXPERIENCE
-        </h1>
       </div>
       <div className=" w-3/4 mx-auto flex justify-start px-10 py-16 items-stretch gap-24">
         <div className="flex flex-col w-[30%] justify-start items-center gap-6 mt-10">
@@ -95,10 +101,10 @@ export default function Home() {
           )}
           {toggle === 2 && (
             <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
               <BsSendCheckFill className="w-52 h-52 text-cyan-700 " />
               <p className="font-bold text-gray-800 text-2xl mt-3">
                 WE HAVE WORLDWIDE BUSINESS
@@ -114,10 +120,10 @@ export default function Home() {
           )}
           {toggle === 3 && (
             <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
               <IoIosSettings className="w-52 h-52 text-cyan-700 duration-300" />
               <p className="font-bold text-gray-800 text-2xl mt-3">
                 WE HAVE WORLDWIDE BUSINESS
@@ -132,6 +138,9 @@ export default function Home() {
             </motion.div>
           )}
         </div>
+      </div>
+      <div>
+        <BlogCard />
       </div>
     </main>
   );
