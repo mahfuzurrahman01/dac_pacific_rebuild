@@ -58,7 +58,7 @@ const Navbar = () => {
               {showDropDown1 && (
                 <div
                   onMouseEnter={() => onHoverHandle(1)}
-                  className="p-5 flex justify-center flex-col w-36 bg-gray-50 absolute top-4 duration-300 text-gray-900 shadow-gray-300 font-semibold shadow-lg pt-5"
+                  className="z-30 p-5 flex justify-center flex-col w-36 bg-gray-50 absolute top-4 duration-300 text-gray-900  font-semibold  pt-5"
                 >
                   <Link
                     href="/"
@@ -96,7 +96,7 @@ const Navbar = () => {
               {showDropDown2 && (
                 <div
                   onMouseEnter={() => onHoverHandle(2)}
-                  className="p-5 flex justify-center flex-col w-36 bg-gray-50 absolute top-4 duration-300 text-gray-900 shadow-gray-300 font-semibold shadow-lg pt-5"
+                  className="z-30 p-5 flex justify-center flex-col w-36 bg-gray-50 absolute top-4 duration-300 text-gray-900  font-semibold pt-5"
                 >
                   <Link
                     href="/"
