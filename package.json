@@ -13,6 +13,7 @@
     "@types/node": "20.5.6",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "aos": "^2.3.4",
     "autoprefixer": "10.4.15",
     "axios": "^1.5.0",
     "eslint": "8.48.0",
@@ -26,5 +27,8 @@
     "react-responsive-carousel": "^3.2.23",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/aos": "^2.3.4"
   }
 }

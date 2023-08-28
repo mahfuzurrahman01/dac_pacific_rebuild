@@ -59,7 +59,7 @@ export default function Home() {
         {/* absolute div for showing in banner   */}
         <div className="text-center absolute top-[40%] left-[20%] text-white">
           <h1 className="text-6xl font-bold text-white">
-            WELCOME TO <span className="text-cyan-500">DAC</span> PACIFIC LTD
+            WELCOME TO <span className="text-cyan-800">DAC</span> PACIFIC LTD
           </h1>
           <h1 className="text-3xl font-semibold mt-2">
             OPERATION AND MONITORING WITH EXPERIENCE

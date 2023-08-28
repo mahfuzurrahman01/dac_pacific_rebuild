@@ -118,8 +118,8 @@ const Blog = () => {
                 EMBELLISHMENT & ACCESSORIES DEVELOPMENT
               </h3>
               <p className="text-gray-400">
-                SMB TEX LIMITED is experienced in design and development for
-                offering highly detailed embroideries and embellishments to
+                DAC PACIFIC LTD LIMITED is experienced in design and development
+                for offering highly detailed embroideries and embellishments to
                 enhance any type of garment.
               </p>
               <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">

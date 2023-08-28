@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="flex justify-end items-center gap-10">
             <Link
               className="uppercase font-semibold text-black hover:text-sky-600 text-sm duration-300"
-              href="#"
+              href="/"
             >
               Home
             </Link>
@@ -61,10 +61,10 @@ const Navbar = () => {
                   className="z-30 p-5 flex justify-center flex-col w-36 bg-gray-50 absolute top-4 duration-300 text-gray-900  font-semibold  pt-5"
                 >
                   <Link
-                    href="/"
+                    href="/about"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
                   >
-                    item
+                    ABOUT US
                   </Link>
                   <Link
                     href="/"
