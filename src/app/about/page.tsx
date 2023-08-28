@@ -14,7 +14,7 @@ import { FaUsers } from "react-icons/fa";
 import { BiCut, BiSolidBriefcaseAlt } from "react-icons/bi";
 import { GiTrophy } from "react-icons/gi";
 import { MdOutlinePriceChange } from "react-icons/md";
-import {TbTruckDelivery} from 'react-icons/tb'
+import { TbTruckDelivery } from "react-icons/tb";
 const page = () => {
   useEffect(() => {
     AOS.init();

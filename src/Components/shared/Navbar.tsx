@@ -67,10 +67,10 @@ const Navbar = () => {
                     ABOUT US
                   </Link>
                   <Link
-                    href="/"
+                    href="/service"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
                   >
-                    item
+                    SERVICE
                   </Link>
                   <Link
                     href="/"
