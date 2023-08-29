@@ -1,11 +1,20 @@
+"use client";
 import Image from "next/image";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Blog = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <section className="py-6 sm:py-12 bg-gray-50 text-gray-600 w-11/12 mx-auto">
       <div className="container p-6 mx-auto space-y-8">
         <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3 mt-4">
-          <article className="flex flex-col bg-zinc-950 text-white">
+          <article
+            data-aos="zoom-in"
+            className="flex flex-col bg-zinc-950 text-white"
+          >
             <a
               rel="noopener noreferrer"
               href="#"
@@ -46,7 +55,10 @@ const Blog = () => {
               </div>
             </div>
           </article>
-          <article className="flex flex-col bg-zinc-950 text-white">
+          <article
+            data-aos="zoom-in"
+            className="flex flex-col bg-zinc-950 text-white"
+          >
             <a
               rel="noopener noreferrer"
               href="#"
@@ -87,7 +99,10 @@ const Blog = () => {
               </div>
             </div>
           </article>
-          <article className="flex flex-col bg-zinc-950 text-white">
+          <article
+            data-aos="zoom-in"
+            className="flex flex-col bg-zinc-950 text-white"
+          >
             <a
               rel="noopener noreferrer"
               href="#"

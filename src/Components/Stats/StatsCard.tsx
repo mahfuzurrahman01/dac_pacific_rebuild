@@ -4,7 +4,7 @@ import { BiSolidBriefcaseAlt } from "react-icons/bi";
 import { GiTrophy } from "react-icons/gi";
 const StatsCard = () => {
   return (
-    <div className="w-full py-5 px-2 flex justify-between items-center bg-zinc-950">
+    <div className="w-full py-5 px-2 lg:flex hidden justify-between items-center bg-zinc-950">
       <div className="flex flex-col justify-center items-center gap-1 w-1/4 hover:bg-black duration-500 p-5">
         <FaUsers className="text-white text-5xl" />
         <h1 className="font-bold text-6xl text-white">1200</h1>

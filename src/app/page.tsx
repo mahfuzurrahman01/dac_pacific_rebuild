@@ -31,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main className="overflow-hidden">
       <div
         style={backgroundImageStyle}
         className="w-full h-screen fixed top-0  -z-10 brightness-50"
@@ -46,27 +46,27 @@ export default function Home() {
           showStatus={false}
           className="w-full"
         >
-          <div className="w-full h-[700px]">
-            <Image alt="banner" src={banner1} className="brightness-75" />
+          <div className="w-full lg:h-[700px] h-screen">
+            <Image alt="banner" src={banner1} className="brightness-75 w-full h-full" />
           </div>
           <div className="w-full h-[700px]">
-            <Image alt="banner" src={banner2} className="brightness-75" />
+            <Image alt="banner" src={banner2} className="brightness-75 w-full h-full" />
           </div>
           <div className="w-full h-[700px]">
-            <Image alt="banner" src={banner3} className="brightness-75" />
+            <Image alt="banner" src={banner3} className="brightness-75 w-full h-full" />
           </div>
         </Carousel>
         {/* absolute div for showing in banner   */}
-        <div className="text-center absolute top-[40%] left-[20%] text-white">
-          <h1 className="text-6xl font-bold text-white">
+        <div className="text-center absolute top-[40%] lg:left-[20%] left-[10%] text-white">
+          <h1 className="lg:text-6xl text-4xl font-bold text-white">
             WELCOME TO <span className="text-cyan-800">DAC</span> PACIFIC LTD
           </h1>
-          <h1 className="text-3xl font-semibold mt-2">
+          <h1 className="lg:text-3xl text-xl  font-semibold mt-2">
             OPERATION AND MONITORING WITH EXPERIENCE
           </h1>
         </div>
       </div>
-      <div className="bg-gray-50">
+      <div className="bg-gray-50 lg:block hidden">
         <div className=" w-3/4 mx-auto flex justify-start px-10 py-16 items-stretch gap-24 ">
           <div className="flex flex-col w-[30%] justify-start items-center gap-6 mt-10">
             <div

@@ -21,10 +21,8 @@ const BlogCard = () => {
           style={backgroundImageStyle}
         ></div>
         <div className="col-span-12 align-middle lg:col-span-6 lg:h-auto flex flex-col justify-center items-center px-5 py-24">
-          <h2 className="uppercase font-bold text-xl " style={myFont.style}>
-            KNOW MORE ABOUT OUR COMPANY
-          </h2>
-          <h1 className="uppercase text-5xl mt-2" style={myFont2.style}>
+          
+          <h1 className="uppercase text-5xl mt-2 mb-5" style={myFont2.style}>
             WHY CHOOSE US
           </h1>
           <p className="w-3/4 mx-auto text-center">
