@@ -23,7 +23,7 @@ const page = () => {
   };
   const [divisionMessage, setDivisionMessage] = useState<number>(3);
   return (
-    <div className="relative">
+    <div className="relative -z-10">
       <div
         style={backgroundImageStyle}
         className="w-full h-screen fixed top-0  -z-10 brightness-50"

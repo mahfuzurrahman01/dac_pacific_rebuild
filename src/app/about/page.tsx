@@ -41,7 +41,7 @@ const page = () => {
         className="w-full h-screen fixed top-0  -z-10 brightness-50"
       ></div>
       <div
-        className="w-full h-96 flex justify-center items-center flex-col"
+        className="w-full lg:h-96 h-64 flex justify-center items-center flex-col"
         style={backgroundImageStyle}
       >
         <div className="bg-gray-900 w-full h-full bg-opacity-40 flex justify-center items-center flex-col gap-3">
@@ -91,9 +91,9 @@ const page = () => {
           </nav>
         </div>
       </div>
-      <div className="p-24 bg-gray-50">
+      <div className="lg:p-24 p-2 bg-gray-50">
         <h1
-          className="text-3xl text-center uppercase font-bold text-zinc-900"
+          className="lg:text-3xl text-2xl text-center uppercase font-bold text-zinc-900"
           style={myFont2.style}
         >
           About our company
@@ -209,7 +209,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-start p-12 col-span-12 lg:col-span-6 lg:h-auto">
+            <div className="flex flex-col justify-start lg:p-12 p-2 col-span-12 lg:col-span-6 lg:h-auto">
               <h1 style={myFont2.style} className="text-4xl text-gray-700">
                 WHY WE EXIST
               </h1>
@@ -232,7 +232,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-transparent w-full h-96 flex justify-center items-center">
+      <div className="bg-transparent w-full lg:h-96 lg:flex hidden justify-center items-center">
         <div className="w-full py-5 px-2 flex justify-between items-center">
           <div className="flex flex-col justify-center items-center gap-1 w-1/4 duration-500 p-5">
             <FaUsers className="text-white text-5xl" />
@@ -265,8 +265,8 @@ const page = () => {
         </div>
       </div>
       <div className="bg-white flex justify-center items-center">
-        <div className="flex flex-wrap w-4/5 mx-auto p-5 justify-center items-center">
-          <div className="flex flex-col gap-2 justify-center items-center w-[40%]  p-7">
+        <div className="flex flex-wrap lg:w-4/5 w-11/12 mx-auto p-5 justify-center items-center">
+          <div className="flex flex-col gap-2 justify-center items-center lg:w-[40%] w-full  lg:p-7 p-2">
             <BiCut className="w-20 h-20 bg-cyan-700 rounded-full p-2 text-white" />
             <p
               className="text-gray-800 text-2xl font-semibold uppercase mt-2"
@@ -281,7 +281,7 @@ const page = () => {
               magnam impedit reiciendis autem porro?
             </p>
           </div>
-          <div className="flex flex-col gap-2 justify-center items-center w-[40%]  p-7">
+          <div className="flex flex-col gap-2 justify-center items-center lg:w-[40%] w-full  lg:p-7 p-2">
             <MdOutlinePriceChange className="w-20 h-20 bg-cyan-700 rounded-full p-2 text-white" />
             <p
               className="text-gray-800 text-2xl font-semibold uppercase mt-2"
@@ -297,7 +297,7 @@ const page = () => {
               Negotiation and finalization of price.
             </p>
           </div>
-          <div className="flex flex-col gap-2 justify-center items-center w-[40%]  p-7">
+          <div className="flex flex-col gap-2 justify-center items-center lg:w-[40%] w-full  lg:p-7 p-2">
             <AiOutlineLineChart className="w-20 h-20 bg-cyan-700 rounded-full p-2 text-white" />
             <p
               className="text-gray-800 text-2xl font-semibold uppercase mt-2"
@@ -312,7 +312,7 @@ const page = () => {
               conducted inspection in 4 stages of production.
             </p>
           </div>
-          <div className="flex flex-col gap-2 justify-center items-center w-[40%]  p-7">
+          <div className="flex flex-col gap-2 justify-center items-center lg:w-[40%] w-full  lg:p-7 p-2">
             <TbTruckDelivery className="w-20 h-20 bg-cyan-700 rounded-full p-2 text-white" />
             <p
               className="text-gray-800 text-2xl font-semibold uppercase mt-2"

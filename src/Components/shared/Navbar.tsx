@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,6 +29,9 @@ const Navbar = () => {
   const menuBarHandle = () => {
     setOpenMenu(!openMenu);
   };
+
+  const [showSubSection, setShowSubSection] = useState(false);
+
   return (
     <div className="bg-gray-50 p-4 ">
       <header className=" lg:w-4/5 w-11/12 mx-auto text-gray-100">
@@ -58,7 +62,7 @@ const Navbar = () => {
               {showDropDown1 && (
                 <div
                   onMouseEnter={() => onHoverHandle(1)}
-                  className="z-30 p-5 flex justify-center flex-col w-36 bg-gray-50 absolute top-4 duration-300 text-gray-900  font-semibold  pt-5"
+                  className="z-30 p-5 flex justify-center flex-col w-56 bg-gray-50 absolute top-4 duration-300 text-gray-900  font-semibold  pt-5"
                 >
                   <Link
                     href="/about"
@@ -73,10 +77,10 @@ const Navbar = () => {
                     SERVICE
                   </Link>
                   <Link
-                    href="/"
+                    href="/management"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
                   >
-                    item
+                    MANAGEMENT
                   </Link>
                 </div>
               )}
@@ -96,52 +100,86 @@ const Navbar = () => {
               {showDropDown2 && (
                 <div
                   onMouseEnter={() => onHoverHandle(2)}
-                  className="z-30 p-5 flex justify-center flex-col w-36 bg-gray-50 absolute top-4 duration-300 text-gray-900  font-semibold pt-5"
+                  className="z-30 flex justify-center flex-col w-36 bg-gray-50 absolute top-4 duration-300 text-gray-900  font-semibold pt-5"
                 >
-                  <Link
+                  <button
+                    onMouseEnter={() => setShowSubSection(true)}
+                    onMouseLeave={() => setShowSubSection(false)}
+                    className="hover:text-sky-600 duration-300 w-full border-b border-gray-300 p-2"
+                  >
+                    KNIT ITEM
+                  </button>
+                  {/* <Link
                     href="/"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
                     item2
                   </Link>
                   <Link
                     href="/"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
                     item2
                   </Link>
                   <Link
                     href="/"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
                     item2
                   </Link>
                   <Link
                     href="/"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
                     item2
-                  </Link>
-                  <Link
-                    href="/"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
-                  >
-                    item2
-                  </Link>
+                  </Link> */}
+                </div>
+              )}
+              {showSubSection && (
+                <div
+                  onMouseEnter={() => setShowSubSection(true)}
+                  onMouseLeave={() => setShowSubSection(false)}
+                >
+                  <div className="z-30 p-5 flex justify-center flex-col w-36 bg-gray-50 absolute top-10 right-16 duration-300 text-gray-900  font-semibold pt-5">
+                    <Link
+                      href="/gallary/kids"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    >
+                      KIDS
+                    </Link>
+                    <Link
+                      href="/gallary/lingerie"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    >
+                      LINGERIE
+                    </Link>
+                    <Link
+                      href="/men"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    >
+                      MENS
+                    </Link>
+                    <Link
+                      href="/women"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    >
+                      WOMENS
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
 
             <Link
               className="uppercase font-semibold text-black hover:text-sky-600 text-sm duration-300"
-              href="#"
+              href="/contact"
             >
               Contact
             </Link>
           </div>
         </div>
         {/* this menu will show only on small screen  */}
-        <div className="container lg:hidden flex justify-between h-8 mx-auto items-center relative">
+        <div className="container lg:hidden flex justify-between h-8 mx-auto items-center relative z-30">
           <Link href="/">
             <Image src={logo} alt="logo" className="w-24 h-8" />
           </Link>
@@ -164,8 +202,8 @@ const Navbar = () => {
       <div
         className={`${
           openMenu
-            ? "w-full p-5 flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500"
-            : "w-full p-5 flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500"
+            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500"
+            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500"
         }`}
       >
         <Link
@@ -176,15 +214,46 @@ const Navbar = () => {
         </Link>
         <Link
           className="font-semibold hover:text-sky-600 duration-300 uppercase"
-          href="/"
+          href="/about"
         >
-          Company
+          About us
         </Link>
         <Link
           className="font-semibold hover:text-sky-600 duration-300 uppercase"
-          href="/"
+          href="/service"
         >
-          Gallary
+          Service
+        </Link>
+
+        <Link
+          className="font-semibold hover:text-sky-600 duration-300 uppercase"
+          href="/management"
+        >
+          Management
+        </Link>
+        <Link
+          className="font-semibold hover:text-sky-600 duration-300 uppercase"
+          href="/kids"
+        >
+          Kids Item
+        </Link>
+        <Link
+          className="font-semibold hover:text-sky-600 duration-300 uppercase"
+          href="/lingerie"
+        >
+          Lingerie
+        </Link>
+        <Link
+          className="font-semibold hover:text-sky-600 duration-300 uppercase"
+          href="/men"
+        >
+          Men's Item
+        </Link>
+        <Link
+          className="font-semibold hover:text-sky-600 duration-300 uppercase"
+          href="/women"
+        >
+          Women's Item
         </Link>
         <Link
           className="font-semibold hover:text-sky-600 duration-300 uppercase"

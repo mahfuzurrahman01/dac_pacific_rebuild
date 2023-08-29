@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <section className="py-6 bg-zinc-950 text-gray-50">
+    <section className="py-16 bg-zinc-950 text-gray-50 ">
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6">
           <h1 className="text-4xl font-bold">CONTACT INFO</h1>
@@ -20,8 +20,7 @@ const ContactForm = () => {
                 ></path>
               </svg>
               <span className="font-light">
-                Plot # 38, Road # 05, Sector # 03, Uttara Model Town,
-                Dhaka-1230, Bangladesh.
+              House No. # 447, road # 7 (east side) D.O.H.S. Baridhara, Dhaka Cantonment, Dhaka - 1206. Bangladesh.
               </span>
             </p>
             <p className="flex items-center">
@@ -33,7 +32,7 @@ const ContactForm = () => {
               >
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
               </svg>
-              <span>+880 1722 283 001</span>
+              <span>+(8802) 8414994, 8417985, 8412234, 8810629, 8412920-2</span>
             </p>
             <p className="flex items-center">
               <svg
@@ -45,7 +44,7 @@ const ContactForm = () => {
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
               </svg>
-              <span>info@smbtex.com</span>
+              <span>dinesh@dacpacificbd.com. </span>
             </p>
             <p className="flex items-center">
               <svg
@@ -56,7 +55,7 @@ const ContactForm = () => {
               >
                 <path d="M404,344a75.9,75.9,0,0,0-60.208,29.7L179.869,280.664a75.693,75.693,0,0,0,0-49.328L343.792,138.3a75.937,75.937,0,1,0-13.776-28.976L163.3,203.946a76,76,0,1,0,0,104.108l166.717,94.623A75.991,75.991,0,1,0,404,344Zm0-296a44,44,0,1,1-44,44A44.049,44.049,0,0,1,404,48ZM108,300a44,44,0,1,1,44-44A44.049,44.049,0,0,1,108,300ZM404,464a44,44,0,1,1,44-44A44.049,44.049,0,0,1,404,464Z"></path>
               </svg>
-              <span>www.smbtex.com</span>
+              <span>www.dacpacific.com</span>
             </p>
           </div>
         </div>
