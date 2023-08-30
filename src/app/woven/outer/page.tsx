@@ -5,7 +5,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import logo from "../../../public/logo/logo.jpg";
+import logo from "../../../../public/logo/logo.jpg";
 import { AiFillCaretDown, AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const page = () => {
   const [showDropDown1, setShowDropDown1] = useState<boolean>(false);
@@ -112,18 +112,18 @@ const page = () => {
                       KNIT ITEM
                     </button>
                     <Link
-                    href="/woven"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN SHIRTS
-                  </Link>
-                  <Link
-                    href="/woven/bottoms"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN BOTTOMS
-                  </Link>
-                  <Link
+                      href="/woven"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN SHIRTS
+                    </Link>
+                    <Link
+                      href="/woven/bottoms"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN BOTTOMS
+                    </Link>
+                    <Link
                     href="/woven/sweater"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
@@ -290,7 +290,7 @@ const page = () => {
         </div>
       </div>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        LADIES DRESS
+        OUTERWEAR
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
@@ -298,7 +298,7 @@ const page = () => {
             width={200}
             height={300}
             src={
-              "https://www.smbtex.com/images/product/knit-Item/Womens/Dress/knit-women-dress%20(1).png"
+              "https://www.smbtex.com/images/product/Outer%20Wear/BOTTOM%20WEAR/bottom-wear-1.jpg"
             }
             alt=""
             className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
@@ -309,7 +309,7 @@ const page = () => {
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
             src={
-              "https://www.smbtex.com/images/product/knit-Item/Womens/Dress/knit-women-dress%20(2).png"
+              "https://www.smbtex.com/images/product/Outer%20Wear/BOTTOM%20WEAR/bottom-wear-2.jpg"
             }
           />
           <Image
@@ -318,7 +318,7 @@ const page = () => {
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
             src={
-              "https://www.smbtex.com/images/product/knit-Item/Womens/Dress/knit-women-dress%20(3).png"
+              "https://www.smbtex.com/images/product/Outer%20Wear/BOTTOM%20WEAR/bottom-wear-3.jpg"
             }
           />
           <Image
@@ -327,149 +327,44 @@ const page = () => {
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
             src={
-              "https://www.smbtex.com/images/product/knit-Item/Womens/Dress/knit-women-dress%20(4).png"
+              "https://www.smbtex.com/images/product/Outer%20Wear/BOTTOM%20WEAR/bottom-wear-5.jpg"
             }
           />
-        </div>
-      </section>
-      <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        LADIES WOVEN HOODY JACKET
-      </h1>
-      <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
-        <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
           <Image
             width={200}
             height={300}
-            src={"/womens/wh1.jpg"}
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={
+              "https://www.smbtex.com/images/product/Outer%20Wear/BOTTOM%20WEAR/bottom-wear-12.jpg"
+            }
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"/womens/wh2.jpg"}
+            src={
+              "https://www.smbtex.com/images/product/Outer%20Wear/BOTTOM%20WEAR/bottom-wear-7.jpg"
+            }
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"/womens/wh3.jpg"}
+            src={
+              "https://www.smbtex.com/images/product/Outer%20Wear/BOTTOM%20WEAR/bottom-wear-7.jpg"
+            }
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"/womens/wh4.jpg"}
-          />
-        </div>
-      </section>
-      <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        LADIES POLO SHIRT
-      </h1>
-      <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
-        <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
-          <Image
-            width={200}
-            height={300}
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(1).png"}
-            alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(2).png"}
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(3).png"}
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(4).png"}
-          />
-        </div>
-      </section>
-      <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-      LADIES SHIRT
-      </h1>
-      <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
-        <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
-          <Image
-            width={200}
-            height={300}
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(1).png"}
-            alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(2).png"}
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(3).png"}
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(4).png"}
-          />
-        </div>
-      </section>
-      <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-
-LADIES SPORTSWEAR
-      </h1>
-      <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
-        <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
-          <Image
-            width={200}
-            height={300}
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(1).png"}
-            alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(2).png"}
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(3).png"}
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(4).png"}
+            src={
+              "https://www.smbtex.com/images/product/Outer%20Wear/BOTTOM%20WEAR/bottom-wear-12.jpg"
+            }
           />
         </div>
       </section>

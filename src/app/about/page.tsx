@@ -146,6 +146,30 @@ const page = () => {
                     >
                       KNIT ITEM
                     </button>
+                    <Link
+                    href="/woven"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    WOVEN SHIRTS
+                  </Link>
+                  <Link
+                    href="/woven/bottoms"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    WOVEN BOTTOMS
+                  </Link>
+                  <Link
+                    href="/woven/sweater"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    SWEATER
+                  </Link>
+                  <Link
+                    href="/woven/outer"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    OUTERWEAR
+                  </Link>
                     {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -417,15 +441,16 @@ const page = () => {
                   What we do
                 </h3>
                 <p className="my-6 text-gray-700">
-                  SMB TEX is working one of the leading fastest apparel buying
-                  house for its customers from Bangladesh. Working as buying
-                  agents /local representative to execute the orders on behalf
-                  of the customer/buyers. Sourcing Cost effective and Quality
-                  Apparel Items with specialized from leading class and
-                  compliant unit. Bulk Production follow up, inline inspections,
-                  final inspections by our qualified & experienced Quality
-                  Auditors/quality Assurance Inspectors. Monitoring and assuring
-                  on time delivery/shipment of the garments for the customers.
+                  DAC PACIFIC LTD. is working one of the leading fastest
+                  apparels buying house for its customers from Bangladesh.
+                  Working as buying agents /local representative to execute the
+                  orders on behalf of the customer/buyers. Sourcing Cost
+                  effective and Quality Apparel Items with specialized from
+                  leading class and compliant unit. Bulk Production follow up,
+                  inline inspections, final inspections by our qualified &
+                  experienced Quality Auditors/quality Assurance Inspectors.
+                  Monitoring and assuring on time delivery/shipment of the
+                  garments for the customers.
                 </p>
               </div>
             </div>

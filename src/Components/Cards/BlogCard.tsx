@@ -14,8 +14,8 @@ const BlogCard = () => {
     backgroundSize: "cover",
   };
   return (
-    <div className="bg-gray-100 text-gray-700">
-      <div className="container grid grid-cols-12 mx-auto">
+    <div className="bg-gray-50 text-gray-700">
+      <div className="container grid grid-cols-12 mx-auto py-16">
         <div
           className="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover bg-gray-700 lg:col-span-6 lg:h-auto"
           style={backgroundImageStyle}

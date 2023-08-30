@@ -111,6 +111,30 @@ const page = () => {
                   >
                     KNIT ITEM
                   </button>
+                  <Link
+                    href="/woven"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    WOVEN SHIRTS
+                  </Link>
+                  <Link
+                    href="/woven/bottoms"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    WOVEN BOTTOMS
+                  </Link>
+                  <Link
+                    href="/woven/sweater"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    SWEATER
+                  </Link>
+                  <Link
+                    href="/woven/outer"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    OUTERWEAR
+                  </Link>
                   {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
