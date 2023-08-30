@@ -1,8 +1,8 @@
-import Navbar from "@/Components/shared/Navbar";
+
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Footer from "@/Components/shared/Footer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,13 +25,13 @@ export default function RootLayout({
   //   backgroundRepeat: "repeat",
   //   backgroundPosition: "center",
   // };
-
+  const tailwindCss = "w-full";
+  const classes = inter.className;
+  const combinedClassName = `${tailwindCss} ${classes}`;
   return (
     <html lang="en">
-      <body >
-        <Navbar />
+      <body className={combinedClassName}>
         {children}
-        <Footer />
       </body>
     </html>
   );

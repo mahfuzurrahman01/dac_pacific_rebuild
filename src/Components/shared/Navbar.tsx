@@ -33,7 +33,7 @@ const Navbar = () => {
   const [showSubSection, setShowSubSection] = useState(false);
 
   return (
-    <div className="bg-gray-50 p-4 ">
+    <div className="bg-gray-50 p-4 w-full">
       <header className=" lg:w-4/5 w-11/12 mx-auto text-gray-100">
         {/* this menu will show only on large screen  */}
         <div className="container lg:flex hidden justify-between h-16 mx-auto items-center">

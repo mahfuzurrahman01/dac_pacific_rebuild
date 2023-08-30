@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
-import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import banner1 from "../../public/banner/banner-1.jpg";
 import banner2 from "../../public/banner/banner-2.jpg";
@@ -7,7 +7,11 @@ import banner3 from "../../public/banner/banner-3.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; //
 import { BsBriefcaseFill, BsSendCheckFill } from "react-icons/bs";
 import { IoIosSettings } from "react-icons/io";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import logo from "../../public/logo/logo.jpg";
+import { AiFillCaretDown, AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import BlogCard from "@/Components/Cards/BlogCard";
 import axios from "axios";
@@ -15,7 +19,43 @@ import StatsCard from "@/Components/Stats/StatsCard";
 import Blog from "@/Components/Blog/Blog";
 import Touch from "@/Components/GetTouch/Touch";
 import ContactForm from "@/Components/Contact/ContactForm";
+import { FaUsers } from "react-icons/fa";
+import { AiFillBank } from "react-icons/ai";
+import { BiSolidBriefcaseAlt } from "react-icons/bi";
+import { GiTrophy } from "react-icons/gi";
+import localFont from "@next/font/local";
+import AOS from "aos";
+import "aos/dist/aos.css";
+const myFont2 = localFont({ src: "../../public/fonts/Cardo-Bold.ttf" });
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  });
+  const [showDropDown1, setShowDropDown1] = useState<boolean>(false);
+  const [showDropDown2, setShowDropDown2] = useState<boolean>(false);
+  const onHoverHandle = (id: number) => {
+    if (id === 1) {
+      setShowDropDown1(true);
+    }
+    if (id === 2) {
+      setShowDropDown2(true);
+    }
+  };
+  const onMouseOut = (id: number) => {
+    if (id === 1) {
+      setShowDropDown1(false);
+    }
+    if (id === 2) {
+      setShowDropDown2(false);
+    }
+  };
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
+  // menu bar open and closing handle
+  const menuBarHandle = () => {
+    setOpenMenu(!openMenu);
+  };
+
+  const [showSubSection, setShowSubSection] = useState(false);
   const [toggle, setToggle] = useState<number>(1);
   const toggleHandle = (num: number) => {
     setToggle(num);
@@ -32,6 +72,236 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
+      <div className="bg-gray-50 p-4 w-full">
+        <header className=" lg:w-4/5 w-11/12 mx-auto text-gray-100">
+          {/* this menu will show only on large screen  */}
+          <div className="container lg:flex hidden justify-between h-16 mx-auto items-center">
+            <Link href="/">
+              <Image src={logo} alt="logo" className="w-36 h-16" />
+            </Link>
+            <div className="flex justify-end items-center gap-10">
+              <Link
+                className="uppercase font-semibold text-black hover:text-sky-600 text-sm duration-300"
+                href="/"
+              >
+                Home
+              </Link>
+              <div
+                onMouseEnter={() => onHoverHandle(1)}
+                onMouseLeave={() => onMouseOut(1)}
+                className="relative"
+              >
+                <Link
+                  className="uppercase font-semibold text-black hover:text-sky-600 text-sm duration-300 flex justify-center items-center gap-1"
+                  href="#"
+                >
+                  Company
+                  <AiFillCaretDown />
+                </Link>
+                {showDropDown1 && (
+                  <div
+                    onMouseEnter={() => onHoverHandle(1)}
+                    className="z-30 p-5 flex justify-center flex-col w-56 bg-gray-50 absolute top-4 duration-300 text-gray-900  font-semibold  pt-5"
+                  >
+                    <Link
+                      href="/about"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    >
+                      ABOUT US
+                    </Link>
+                    <Link
+                      href="/service"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    >
+                      SERVICE
+                    </Link>
+                    <Link
+                      href="/management"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    >
+                      MANAGEMENT
+                    </Link>
+                  </div>
+                )}
+              </div>
+              <div
+                onMouseEnter={() => onHoverHandle(2)}
+                onMouseLeave={() => onMouseOut(2)}
+                className="relative"
+              >
+                <Link
+                  className="uppercase font-semibold text-black hover:text-sky-600 text-sm duration-300 flex justify-center items-center gap-1"
+                  href="#"
+                >
+                  Gallary
+                  <AiFillCaretDown />
+                </Link>
+                {showDropDown2 && (
+                  <div
+                    onMouseEnter={() => onHoverHandle(2)}
+                    className="z-30 flex justify-center flex-col w-36 bg-gray-50 absolute top-4 duration-300 text-gray-900  font-semibold pt-5"
+                  >
+                    <button
+                      onMouseEnter={() => setShowSubSection(true)}
+                      onMouseLeave={() => setShowSubSection(false)}
+                      className="hover:text-sky-600 duration-300 w-full border-b border-gray-300 p-2"
+                    >
+                      KNIT ITEM
+                    </button>
+                    {/* <Link
+                    href="/"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    item2
+                  </Link>
+                  <Link
+                    href="/"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    item2
+                  </Link>
+                  <Link
+                    href="/"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    item2
+                  </Link>
+                  <Link
+                    href="/"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    item2
+                  </Link> */}
+                  </div>
+                )}
+                {showSubSection && (
+                  <div
+                    onMouseEnter={() => setShowSubSection(true)}
+                    onMouseLeave={() => setShowSubSection(false)}
+                  >
+                    <div className="z-30 p-5 flex justify-center flex-col w-36 bg-gray-50 absolute top-10 right-16 duration-300 text-gray-900  font-semibold pt-5">
+                      <Link
+                        href="/gallary/kids"
+                        className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                      >
+                        KIDS
+                      </Link>
+                      <Link
+                        href="/gallary/lingerie"
+                        className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                      >
+                        LINGERIE
+                      </Link>
+                      <Link
+                        href="/men"
+                        className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                      >
+                        MENS
+                      </Link>
+                      <Link
+                        href="/women"
+                        className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                      >
+                        WOMENS
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                className="uppercase font-semibold text-black hover:text-sky-600 text-sm duration-300"
+                href="/contact"
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
+          {/* this menu will show only on small screen  */}
+          <div className="container lg:hidden flex justify-between h-8 mx-auto items-center relative z-30">
+            <Link href="/">
+              <Image src={logo} alt="logo" className="w-24 h-8" />
+            </Link>
+            <div>
+              {openMenu ? (
+                <AiOutlineClose
+                  onClick={menuBarHandle}
+                  className="text-lg bg-sky-600 text-gray-50"
+                />
+              ) : (
+                <AiOutlineMenu
+                  onClick={menuBarHandle}
+                  className="text-lg bg-sky-600 text-gray-50"
+                />
+              )}
+            </div>
+          </div>
+        </header>
+        {/* // all the small screen tabs  */}
+        <div
+          className={`${
+            openMenu
+              ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50"
+              : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 z-50"
+          }`}
+        >
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/about"
+          >
+            About us
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/service"
+          >
+            Service
+          </Link>
+
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/management"
+          >
+            Management
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/kids"
+          >
+            Kids Item
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/lingerie"
+          >
+            Lingerie
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/men"
+          >
+            Men's Item
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/women"
+          >
+            Women's Item
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/"
+          >
+            Contact
+          </Link>
+        </div>
+      </div>
       <div
         style={backgroundImageStyle}
         className="w-full h-screen fixed top-0  -z-10 brightness-50"
@@ -47,13 +317,25 @@ export default function Home() {
           className="w-full"
         >
           <div className="w-full lg:h-[700px] h-screen">
-            <Image alt="banner" src={banner1} className="brightness-75 w-full h-full" />
+            <Image
+              alt="banner"
+              src={banner1}
+              className="brightness-75 w-full h-full"
+            />
           </div>
           <div className="w-full h-[700px]">
-            <Image alt="banner" src={banner2} className="brightness-75 w-full h-full" />
+            <Image
+              alt="banner"
+              src={banner2}
+              className="brightness-75 w-full h-full"
+            />
           </div>
           <div className="w-full h-[700px]">
-            <Image alt="banner" src={banner3} className="brightness-75 w-full h-full" />
+            <Image
+              alt="banner"
+              src={banner3}
+              className="brightness-75 w-full h-full"
+            />
           </div>
         </Carousel>
         {/* absolute div for showing in banner   */}
@@ -159,13 +441,315 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-50">
-        <BlogCard />
-        <StatsCard />
-        <Blog />
+      <BlogCard />
+      <div className="w-full py-5 px-2 lg:flex hidden justify-between items-center bg-zinc-950">
+        <div className="flex flex-col justify-center items-center gap-1 w-1/4 hover:bg-black duration-500 p-5">
+          <FaUsers className="text-white text-5xl" />
+          <h1 className="font-bold text-6xl text-white">1200</h1>
+          <h1 className="font-semibold text-2xl text-white uppercase">
+            Clients
+          </h1>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-1 w-1/4 hover:bg-black duration-500 p-5">
+          <AiFillBank className="text-white text-5xl" />
+          <h1 className="font-bold text-6xl text-white">1277</h1>
+          <h1 className="font-semibold text-2xl text-white uppercase">
+            ITEM SOLD
+          </h1>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-1 w-1/4 hover:bg-black duration-500 p-5">
+          <BiSolidBriefcaseAlt className="text-white text-5xl" />
+          <h1 className="font-bold text-6xl text-white">869</h1>
+          <h1 className="font-semibold text-2xl text-white uppercase">
+            Projects
+          </h1>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-1 w-1/4 hover:bg-black duration-500 p-5">
+          <GiTrophy className="text-white text-5xl" />
+          <h1 className="font-bold text-6xl text-white">76</h1>
+          <h1 className="font-semibold text-2xl text-white uppercase">
+            Awards
+          </h1>
+        </div>
       </div>
-      <Touch />
-      <ContactForm />
+      <div className="container p-6 mx-auto space-y-8 bg-gray-50">
+        <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3 mt-4">
+          <div
+            data-aos="zoom-in"
+            className="flex flex-col bg-zinc-950 text-white border-l-2 border-gray-100"
+          >
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              aria-label="Te nulla oportere reprimique his dolorum"
+            >
+              <Image
+                alt=""
+                src="https://www.smbtex.com/images/service/service-1.jpg"
+                className="object-cover w-full h-52 bg-gray-500"
+                width={150}
+                height={150}
+              />
+            </a>
+            <div className="flex flex-col flex-1 p-6">
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                aria-label="SOURCING FACTORIES & FACTORY EVALUATION"
+              ></a>
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                className="text-xs tracki uppercase hover:underline text-gray-400"
+              >
+                Convenire
+              </a>
+              <h3 className="flex-1 py-2 text-lg font-semibold leadi">
+                SOURCING FACTORIES & FACTORY EVALUATION
+              </h3>
+              <p className="text-gray-400">
+                Compliance to social code-of-conduct standarda: Managment and
+                human resources, House Keeping, Working Conditions, Production
+                Capability.
+              </p>
+              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                <span>June 1, 2020</span>
+                <span>2.1K views</span>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in"
+            className="flex flex-col bg-zinc-950 text-white border-l-2 border-gray-100"
+          >
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              aria-label="Te nulla oportere reprimique his dolorum"
+            >
+              <Image
+                alt=""
+                className="object-cover w-full h-52 bg-gray-500"
+                src="https://www.smbtex.com/images/service/service-2.jpg"
+                width={150}
+                height={150}
+              />
+            </a>
+            <div className="flex flex-col flex-1 p-6">
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                aria-label="Te nulla oportere reprimique his dolorum"
+              ></a>
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                className="text-xs tracki uppercase hover:underline text-gray-400"
+              >
+                Convenire
+              </a>
+              <h3 className="flex-1 py-2 text-lg font-semibold leadi">
+                DESIGN, PATTERN & SAMPLE DEVELOPMENT
+              </h3>
+              <p className="text-gray-400">
+                2 years as product development service. Specializing in quality
+                product pattern development, precision made for production
+                environment.
+              </p>
+              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                <span>June 2, 2020</span>
+                <span>2.2K views</span>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in"
+            className="flex flex-col bg-zinc-950 text-white border-l-2 border-gray-100"
+          >
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              aria-label="DESIGN, PATTERN & SAMPLE DEVELOPMENT"
+            >
+              <Image
+                alt=""
+                className="object-cover w-full h-52 bg-gray-500"
+                src="https://www.smbtex.com/images/service/service-3.jpg"
+                width={150}
+                height={150}
+              />
+            </a>
+            <div className="flex flex-col flex-1 p-6">
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                aria-label="Te nulla oportere reprimique his dolorum"
+              ></a>
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                className="text-xs tracki uppercase hover:underline text-gray-400"
+              >
+                Convenire
+              </a>
+              <h3 className="flex-1 py-2 text-lg font-semibold leadi">
+                EMBELLISHMENT & ACCESSORIES DEVELOPMENT
+              </h3>
+              <p className="text-gray-400">
+                DAC PACIFIC LTD LIMITED is experienced in design and development
+                for offering highly detailed embroideries and embellishments to
+                enhance any type of garment.
+              </p>
+              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                <span>June 3, 2020</span>
+                <span>2.3K views</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="bg-transparent w-full h-96 flex justify-center flex-col items-center gap-10">
+          <h1
+            style={myFont2.style}
+            className="font-bold text-2xl text-white w-3/4 text-center"
+          >
+            TILL NOW WE HAVE WORKED WITH THIS BRANDS AND MOVING ON SUCCESSFULLY.
+          </h1>
+          <p className="text-white text-lg font-light">
+            To serve our honorable customers with sincerity, Honesty and hard
+            labor to keep them happy .
+          </p>
+          <div className="flex justify-center items-center gap-4">
+            <button className="py-2 px-8 rounded-full hover:bg-cyan-700 duration-300  bg-transparent border-2 border-white text-white ">
+              READ MORE
+            </button>
+            <button className="py-2 px-8 rounded-full bg-cyan-700 hover:bg-transparent duration-300 border-2 border-white text-white ">
+              GET IN TOUCH
+            </button>
+          </div>
+        </div>
+        <div className="w-full bg-gray-50 ">
+          <div className="pt-5 container flex flex-col flex-wrap content-center items-center justify-center p-4 py-20 mx-auto md:p-10">
+            <h1
+              className="uppercase text-5xl antialiased font-semibold text-center text-gray-800"
+              style={myFont2.style}
+            >
+              Get Our Updates
+            </h1>
+            <p className="pt-2 pb-8 text-xl antialiased text-center text-gray-800">
+              Find out about events and other news
+            </p>
+            <div className="flex flex-row">
+              <input
+                type="text"
+                placeholder="example@email.com"
+                className="w-3/5 p-3 rounded-l-lg sm:w-2/3 outline-slate-500 text-gray-800 bg-gray-300"
+              />
+              <button
+                type="button"
+                className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-cyan-700 text-gray-50 "
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full bg-zinc-200 py-16 bg-opacity-40">
+        <div className="p-5 rounded-lg bg-zinc-50  grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+          <div className="py-6 md:py-0 md:px-6">
+            <h1 className="text-4xl font-bold">CONTACT INFO</h1>
+            <p className="pt-2 pb-4">
+              Fill in the form to start a conversation
+            </p>
+            <div className="space-y-4">
+              <p className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="#0E7490"
+                  className="w-8 h-8 mr-2 sm:mr-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span className="font-light">
+                  House No. # 447, road # 7 (east side) D.O.H.S. Baridhara,
+                  Dhaka Cantonment, Dhaka - 1206. Bangladesh.
+                </span>
+              </p>
+              <p className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="#0E7490"
+                  className="w-8 h-8 mr-2 sm:mr-6"
+                >
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+                <span>
+                  +(8802) 8414994, 8417985, 8412234, 8810629, 8412920-2
+                </span>
+              </p>
+              <p className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="#0E7490"
+                  className="w-8 h-8 mr-2 sm:mr-6"
+                >
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+                <span>dinesh@dacpacificbd.com. </span>
+              </p>
+              <p className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="#0E7490"
+                  className="w-8 h-8 mr-2 sm:mr-6"
+                >
+                  <path d="M404,344a75.9,75.9,0,0,0-60.208,29.7L179.869,280.664a75.693,75.693,0,0,0,0-49.328L343.792,138.3a75.937,75.937,0,1,0-13.776-28.976L163.3,203.946a76,76,0,1,0,0,104.108l166.717,94.623A75.991,75.991,0,1,0,404,344Zm0-296a44,44,0,1,1-44,44A44.049,44.049,0,0,1,404,48ZM108,300a44,44,0,1,1,44-44A44.049,44.049,0,0,1,108,300ZM404,464a44,44,0,1,1,44-44A44.049,44.049,0,0,1,404,464Z"></path>
+                </svg>
+                <span>www.dacpacific.com</span>
+              </p>
+            </div>
+          </div>
+          <form className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+            <label className="block">
+              <span className="mb-1">Full name</span>
+              <input
+                type="text"
+                placeholder="Leroy Jenkins"
+                className="p-2 block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri bg-gray-800"
+              />
+            </label>
+            <label className="block">
+              <span className="mb-1">Email address</span>
+              <input
+                type="email"
+                placeholder="leroy@jenkins.com"
+                className="p-2 block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri bg-gray-800"
+              />
+            </label>
+            <label className="block">
+              <span className="mb-1">Message</span>
+              <textarea className="block w-full rounded-md focus:ring focus:ri focus:ri bg-gray-800"></textarea>
+            </label>
+            <button
+              type="button"
+              className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ri bg-cyan-600 text-gray-50 focus:ri hover:ri"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </main>
   );
 }
