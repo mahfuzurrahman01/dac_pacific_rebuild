@@ -13,7 +13,7 @@
     "@types/node": "20.5.6",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "aos": "^2.3.4",
+    "aos": "^3.0.0-beta.6",
     "autoprefixer": "10.4.15",
     "axios": "^1.5.0",
     "eslint": "8.48.0",
@@ -29,6 +29,6 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/aos": "^2.3.4"
+    "@types/aos": "^3.0.4"
   }
 }
