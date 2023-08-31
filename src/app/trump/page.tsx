@@ -269,7 +269,7 @@ const page = () => {
         <div
           className={`${
             openMenu
-            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
+              ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
               : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
           }`}
         >
@@ -346,7 +346,7 @@ const page = () => {
       >
         <div className="bg-gray-900 w-full h-full bg-opacity-40 flex justify-center items-center flex-col gap-3">
           <h1 className="font-semibold uppercase text-white text-4xl flex justify-center items-center gap-3">
-            About us
+            TRUMP CROWN
           </h1>
           <nav
             aria-label="breadcrumb"
@@ -381,10 +381,10 @@ const page = () => {
                 </svg>
                 <Link
                   rel="noopener noreferrer"
-                  href="/about"
+                  href="/trump"
                   className="flex items-center px-1 capitalize hover:underline text-lg"
                 >
-                  About
+                  TRUMP CROWN
                 </Link>
               </li>
             </ol>
@@ -396,7 +396,7 @@ const page = () => {
           className="lg:text-3xl text-2xl text-center uppercase font-bold text-zinc-900"
           style={myFont2.style}
         >
-          About our company
+          About trump crown
         </h1>
         {/* =======================card ============================  */}
         <section className="p-4 lg:p-8 bg-gray-50 text-gray-900 mt-20">
@@ -408,7 +408,7 @@ const page = () => {
               className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row"
             >
               <Image
-                src="https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcGFueXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt=""
                 className=" bg-gray-500 aspect-video"
                 width={600}
@@ -419,50 +419,30 @@ const page = () => {
                   style={myFont2.style}
                   className="text-3xl font-bold uppercase"
                 >
-                  Who we are
+                  COMPANY PROFILE
                 </h3>
                 <p className="my-6 text-gray-700">
-                  DAC PACIFIC LTD., an apparel buying house who is dealing with
-                  all kinds of apparel customers of different countries in the
-                  world. DAC PACIFIC LTD. established in 1992, Operation and
-                  monitoring with experience over the years. DAC PACIFIC LTD.
-                  places order to a selected sourcing unit for production. We
-                  provide full technical support for the production, Quality and
-                  secured on time shipment.
-                </p>
-              </div>
-            </div>
-            <div
-              data-aos="fade-up-right"
-              data-aos-delay="100"
-              data-aos-duration="500"
-              className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse"
-            >
-              <Image
-                src="https://images.unsplash.com/photo-1576188973526-0e5d7047b0cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                alt=""
-                className="bg-gray-500 aspect-video"
-                width={600}
-                height={350}
-              />
-              <div className="flex flex-col justify-center flex-1 p-6 bg-gray-200">
-                <h3
-                  style={myFont2.style}
-                  className="text-3xl font-bold uppercase"
-                >
-                  What we do
-                </h3>
-                <p className="my-6 text-gray-700">
-                  DAC PACIFIC LTD. is working one of the leading fastest
-                  apparels buying house for its customers from Bangladesh.
-                  Working as buying agents /local representative to execute the
-                  orders on behalf of the customer/buyers. Sourcing Cost
-                  effective and Quality Apparel Items with specialized from
-                  leading class and compliant unit. Bulk Production follow up,
-                  inline inspections, final inspections by our qualified &
-                  experienced Quality Auditors/quality Assurance Inspectors.
-                  Monitoring and assuring on time delivery/shipment of the
-                  garments for the customers.
+                  Trump Crown, thrives to be an ultimate sourcing and
+                  manufacturing partner for companies in business of Garments
+                  and sourcing/consolidation of fabric/trims, commodity division
+                  and furnishings. Our vision and excellence have earned the
+                  company a strong reputation that resonate reliability, quality
+                  and a worldwide recognition of our commitment to supply
+                  products at the best value. The Company, established and
+                  incorporated in, 2010 in Hong Kong is the center of our
+                  network of Manufacturing Plants and Representative Offices
+                  throughout Asia and also the gateway to the production giant
+                  People's Republic of China. This infrastructure, along with
+                  our experienced personnel, enables us to provide our buyers
+                  with: e High quality and competitively priced products e
+                  Knowledgeable team of Local representatives, Merchandisers,
+                  Managers and logistics support Jimmy Paryani Jimmy, having 30
+                  years of experience in garment industry believes that there
+                  isa close relationship with Bangladesh and China, Trump Crown
+                  Hong Kong continues to support Bangladesh manufacturers with
+                  its growing garment business. “Trump Crown (Hong Kong) Ltd” is
+                  associated with “Shanta Group” for their Hong Kong sourcing
+                  and Jimmy has been handling its marketing since twenty years.
                 </p>
               </div>
             </div>
@@ -473,7 +453,7 @@ const page = () => {
               className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row"
             >
               <Image
-                src="https://media.istockphoto.com/id/1415971766/photo/recycling-products-concept-organic-cotton-recycling-cloth-zero-waste-materials-environment.webp?b=1&s=170667a&w=0&k=20&c=lrsYUd0gXRI1dpc6NiHKGDlFcwHbukqLUUiwBDlhnNg="
+                src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbXBhbnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
                 alt=""
                 className=" bg-gray-500 aspect-video"
                 width={600}
@@ -484,183 +464,125 @@ const page = () => {
                   style={myFont2.style}
                   className="text-3xl font-bold uppercase"
                 >
-                  Certifications
+                  PRINCIPAL PRODUCTS:
                 </h3>
                 <p className="my-6 text-gray-700">
-                  DAC PACIFIC LIMITED ROOM #308-309, WING FAT INDUSTRIAL
-                  BUILDING, 12, WANG TAI ROAD, KOWLOON BAY, KOWLOON, HONG KONG
-                  Cad Has been independently assessed and is in compliant with
-                  requirement of: ISO 9001:2015 (Quality Management System) For
-                  the following Scope of Activities: EXPORT & IMPORT OF
-                  READYMADE GARMENTS, TEXTILES, GARMENT ACCESSORIES, GARMENT
-                  MACHINERIES, JUTE BAGS, JUTE PRODUCTS AND CHEMICALS & SIMILAR
-                  PRODUCTS.AAAAAAAAAAAAAF
+                  All types of Woven and Knitted Garments, all types of Fabrics
+                  and Garment related accessories, inclusive Pants, Shorts,
+                  Skirts, Blouses, Dresses, Jackets, Blazers, Vest, Rompers,
+                  Jumpers, Overalls and all types of work wear. Knitted Tops,
+                  Leggings and Shorts. All types of garment accessories
+                  inclusive Buttons, Metal Items, Belts, Laces, Lingerie
+                  accessories etc. , India, China, Hong Kong & Far East markets.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up-left"
+              data-aos-delay="100"
+              data-aos-duration="500"
+              className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row"
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvbXBhbnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt=""
+                className=" bg-gray-500 aspect-video"
+                width={600}
+                height={450}
+              />
+              <div className="flex flex-col justify-center flex-1 p-6 bg-gray-200">
+                <h3
+                  style={myFont2.style}
+                  className="text-3xl font-bold uppercase"
+                >
+                  PRINCIPAL PRODUCTS:
+                </h3>
+                <p className="my-6 text-gray-700">
+                  All types of Woven and Knitted Garments, all types of Fabrics
+                  and Garment related accessories, inclusive Pants, Shorts,
+                  Skirts, Blouses, Dresses, Jackets, Blazers, Vest, Rompers,
+                  Jumpers, Overalls and all types of work wear. Knitted Tops,
+                  Leggings and Shorts. All types of garment accessories
+                  inclusive Buttons, Metal Items, Belts, Laces, Lingerie
+                  accessories etc. , India, China, Hong Kong & Far East markets.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up-left"
+              data-aos-delay="100"
+              data-aos-duration="500"
+              className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row"
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbXBhbnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                alt=""
+                className=" bg-gray-500 aspect-video"
+                width={600}
+                height={450}
+              />
+              <div className="flex flex-col justify-center flex-1 p-6 bg-gray-200">
+                <h3
+                  style={myFont2.style}
+                  className="text-3xl font-bold uppercase"
+                >
+                  Garment Division
+                </h3>
+                <p className="my-6 text-gray-700">
+                  Manufacturer, Distributor and Exporter of Readymade Garments,
+                  Fabrics and Garment related accessories, (Inclusive Buttons,
+                  Metal items, Belts, Laces and Lingerie accessories) to USA,
+                  E.E.C, India, Bangladesh, Sri Lanka, South America and Gulf
+                  markets from Hong Kong, China, India and Bangladesh. We
+                  provide development of new products based on customer
+                  requirements, fashion trends and styles, the latest technical
+                  developments and the creative skills from designers. We offer
+                  a diversified range of products including: Solid dyed Printed
+                  & Yarn-dyed in Cotton & Blends, Ramie/Linen & Blends, Rayon,
+                  Nylon, Polyester, Corduroy, Chambray & Denim, Velveteen (Piece
+                  dyed & Printed), Knits, Silk and Pocketing Fabrics. Represent
+                  and assist overseas buyers and retail stores as Buying Agents
+                  or Consultants for all their sourcing and Q.C. needs in the
+                  markets of China, Bangladesh, India Sri Lanka.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up-left"
+              data-aos-delay="100"
+              data-aos-duration="500"
+              className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row"
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29tcGFueXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt=""
+                className=" bg-gray-500 aspect-video"
+                width={600}
+                height={450}
+              />
+              <div className="flex flex-col justify-center flex-1 p-6 bg-gray-200">
+                <h3
+                  style={myFont2.style}
+                  className="text-3xl font-bold uppercase"
+                >
+                  COMMODITY DIVISION:
+                </h3>
+                <p className="my-6 text-gray-700">
+                  Trump Crown is an entrepreneurial company focused on
+                  merchandising physical commodities. We position ourselves to
+                  provide value through merchandising services, strategic assets
+                  and investments. We trade food products, whole grains, feed
+                  ingredients, agriculture products, emulsifying and stabilizing
+                  agents and many other commodities within North America and
+                  internationally. We have grown into a strong trading company
+                  as a result of our experience, relationships and service.
                 </p>
               </div>
             </div>
           </div>
         </section>
       </div>
-      <div>
-        <div className="bg-gray-100 text-gray-700">
-          <div className="container grid grid-cols-12 mx-auto w-5/6">
-            <div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 ">
-              <h1
-                style={myFont2.style}
-                className="text-3xl font-bold text-gray-600  w-full mb-9"
-              >
-                OUR VERSION
-              </h1>
-              <div className="flex justify-center items-start gap-5 flex-col">
-                <div className="flex flex-col justify-center items-start gap-2">
-                  <h1 style={myFont2.style} className="text-xl text-gray-700">
-                    OUR MISSION AND VISION
-                  </h1>
-                  <p className="text-sm text-gray-700 font-semibold">
-                    To serve our honorable customers with sincerity, Honesty and
-                    hard labor to keep them happy with supplying Quality
-                    products with good prices and on time delivery.
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center items-start gap-2">
-                  <h1 style={myFont2.style} className="text-xl text-gray-700">
-                    BUSINESS
-                  </h1>
-                  <p className="text-sm text-gray-700 font-semibold">
-                    The business stands for reliability in the long run:
-                    suppliers are working with us for a long time and today we
-                    know-how, vertical production lines gives favorable prices.
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center items-start gap-2">
-                  <h1 style={myFont2.style} className="text-xl text-gray-700">
-                    FULLY COMPLIENCE
-                  </h1>
-                  <p className="text-sm text-gray-700 font-semibold">
-                    FULLY COMPLIENCE
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col justify-start lg:p-12 p-2 col-span-12 lg:col-span-6 lg:h-auto">
-              <h1 style={myFont2.style} className="text-4xl text-gray-700">
-                WHY WE EXIST
-              </h1>
-              <p className="my-2">
-                We have been working with RMG sector. We
-                do have a very good understanding of this trade. We have working
-                with all kinds of textile customer’s, we also understand the
-                different requirement for various customers. For this reason, we
-                can offer you very good service, good quality products at market
-                prices, and with a sincere ambition to make your business in
-                Bangladesh to grow and become smooth and hassle-free.
-                Consequently, we have been working with top class Quality
-                customers, mainly European, in fashion, promotion and corporate
-                wear, work wear, sportswear (upon specific request we will
-                gladly list our reference customers). Besides let us just say
-                that you’ll be amazed to find out how many valuable European
-                brands are already buying in Bangladesh.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-transparent w-full lg:h-96 lg:flex hidden justify-center items-center">
-        <div className="w-full py-5 px-2 flex justify-between items-center">
-          <div className="flex flex-col justify-center items-center gap-1 w-1/4 duration-500 p-5">
-            <FaUsers className="text-white text-5xl" />
-            <h1 className="font-bold text-6xl text-white">1200</h1>
-            <h1 className="font-semibold text-2xl text-white uppercase">
-              Clients
-            </h1>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-1 w-1/4 k duration-500 p-5">
-            <AiFillBank className="text-white text-5xl" />
-            <h1 className="font-bold text-6xl text-white">1277</h1>
-            <h1 className="font-semibold text-2xl text-white uppercase">
-              ITEM SOLD
-            </h1>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-1 w-1/4 k duration-500 p-5">
-            <BiSolidBriefcaseAlt className="text-white text-5xl" />
-            <h1 className="font-bold text-6xl text-white">869</h1>
-            <h1 className="font-semibold text-2xl text-white uppercase">
-              Projects
-            </h1>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-1 w-1/4 hover:bg-black duration-500 p-5">
-            <GiTrophy className="text-white text-5xl" />
-            <h1 className="font-bold text-6xl text-white">76</h1>
-            <h1 className="font-semibold text-2xl text-white uppercase">
-              Awards
-            </h1>
-          </div>
-        </div>
-      </div>
-      <div className="bg-white flex justify-center items-center">
-        <div className="flex flex-wrap lg:w-4/5 w-11/12 mx-auto p-5 justify-center items-center">
-          <div className="flex flex-col gap-2 justify-center items-center lg:w-[40%] w-full  lg:p-7 p-2">
-            <BiCut className="w-20 h-20 bg-cyan-700 rounded-full p-2 text-white" />
-            <p
-              className="text-gray-800 text-2xl font-semibold uppercase mt-2"
-              style={myFont2.style}
-            >
-              SAMPLING
-            </p>
-            <p className="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              consequatur dicta ex dignissimos eos sed explicabo quibusdam
-              debitis eligendi ea laborum distinctio iusto delectus! Repellat
-              magnam impedit reiciendis autem porro?
-            </p>
-          </div>
-          <div className="flex flex-col gap-2 justify-center items-center lg:w-[40%] w-full  lg:p-7 p-2">
-            <MdOutlinePriceChange className="w-20 h-20 bg-cyan-700 rounded-full p-2 text-white" />
-            <p
-              className="text-gray-800 text-2xl font-semibold uppercase mt-2"
-              style={myFont2.style}
-            >
-              PRICING
-            </p>
-            <p className="text-center">
-              Our vast networking in Bangladesh allows us to provide the
-              cheapest price available in Bangladesh. Receiving and verifying
-              the quotations of suppliers by studying their suitability both in
-              terms of quality and capacity to meet contractual requirements.
-              Negotiation and finalization of price.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2 justify-center items-center lg:w-[40%] w-full  lg:p-7 p-2">
-            <AiOutlineLineChart className="w-20 h-20 bg-cyan-700 rounded-full p-2 text-white" />
-            <p
-              className="text-gray-800 text-2xl font-semibold uppercase mt-2"
-              style={myFont2.style}
-            >
-              QUALITY ASSUANCE
-            </p>
-            <p className="text-center">
-              Our product terms are depend on products range, quality and
-              control process, product capacity, financial capacity, technology
-              capability and management efficiency. Our Quality Assurance team
-              conducted inspection in 4 stages of production.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2 justify-center items-center lg:w-[40%] w-full  lg:p-7 p-2">
-            <TbTruckDelivery className="w-20 h-20 bg-cyan-700 rounded-full p-2 text-white" />
-            <p
-              className="text-gray-800 text-2xl font-semibold uppercase mt-2"
-              style={myFont2.style}
-            >
-              SHIPMENT
-            </p>
-            <p className="text-center">
-              We monitor shipment with the forwarders from the sourcing point
-              till it goes to buyer door. The above are some of the important
-              activities we perform to provide a very effective service.
-            </p>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 };

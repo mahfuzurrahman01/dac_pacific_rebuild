@@ -121,6 +121,12 @@ export default function Home() {
                     >
                       MANAGEMENT
                     </Link>
+                    <Link
+                      href="/trump"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                    >
+                      TRUMP CROWN
+                    </Link>
                   </div>
                 )}
               </div>
@@ -242,8 +248,8 @@ export default function Home() {
         <div
           className={`${
             openMenu
-              ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50"
-              : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 z-50"
+            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
+            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
           }`}
         >
           <Link
@@ -273,6 +279,12 @@ export default function Home() {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/trump"
+          >
+            Trump crown
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/kids"
           >
             Kids Item
@@ -297,7 +309,7 @@ export default function Home() {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/"
+            href="/contact"
           >
             Contact
           </Link>
@@ -553,7 +565,7 @@ export default function Home() {
                 DESIGN, PATTERN & SAMPLE DEVELOPMENT
               </h3>
               <p className="text-gray-400">
-                2 years as product development service. Specializing in quality
+                we provide product development service. Specializing in quality
                 product pattern development, precision made for production
                 environment.
               </p>
