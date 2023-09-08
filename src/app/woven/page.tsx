@@ -145,7 +145,7 @@ const page = () => {
                       href="/others"
                       className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                     >
-                      Others
+                      OTHERS PRODUCTS
                     </Link>
                     {/* <Link
                     href="/"
@@ -277,13 +277,13 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/kids"
+            href="/gallary/kids"
           >
             Kids Item
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/lingerie"
+            href="/gallary/lingerie"
           >
             Lingerie
           </Link>
@@ -303,7 +303,7 @@ const page = () => {
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/others"
           >
-            Others
+            OTHERS PRODUCTS
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
@@ -314,16 +314,14 @@ const page = () => {
         </div>
       </div>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        MENS WOVEN SHIRTS 
+        MENS WOVEN SHIRT
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
           <Image
             width={200}
             height={300}
-            src={
-              "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(1).jpg"
-            }
+            src={"/mens/mensCasual1.jpg"}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
@@ -332,63 +330,42 @@ const page = () => {
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(2).jpg"
-            }
+            src={"/mens/mensCasual2.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(3).jpg"
-            }
+            src={"/mens/mensCasual3.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(8).jpg"
-            }
+            src={"/mens/mensCasual4.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(9).jpg"
-            }
+            src={"/mens/mensCasual5.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(10).jpg"
-            }
+            src={"/mens/mensCasual6.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(11).jpg"
-            }
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(13).jpg"
-            }
+            src={"/mens/mensCasual7.jpg"}
           />
         </div>
       </section>
@@ -411,7 +388,7 @@ const page = () => {
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
-          
+
           <Image
             width={200}
             height={300}
@@ -419,8 +396,6 @@ const page = () => {
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
             src={"/womens/wws3.jpg"}
           />
-         
-        
         </div>
       </section>
     </div>

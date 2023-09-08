@@ -35,7 +35,7 @@ const page = () => {
 
   return (
     <div>
-    <div className="bg-gray-50 p-4 w-full">
+      <div className="bg-gray-50 p-4 w-full">
         <header className=" lg:w-4/5 w-11/12 mx-auto text-gray-100">
           {/* this menu will show only on large screen  */}
           <div className="container lg:flex hidden justify-between h-16 mx-auto items-center">
@@ -118,35 +118,35 @@ const page = () => {
                       KNIT ITEM
                     </button>
                     <Link
-                    href="/woven"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN SHIRTS
-                  </Link>
-                  <Link
-                    href="/woven/bottoms"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN BOTTOMS
-                  </Link>
-                  <Link
-                    href="/woven/sweater"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    SWEATER
-                  </Link>
-                  <Link
-                    href="/woven/outer"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    OUTERWEAR
-                  </Link>
-                  <Link
-                    href="/others"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    Others
-                  </Link>
+                      href="/woven"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN SHIRTS
+                    </Link>
+                    <Link
+                      href="/woven/bottoms"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN BOTTOMS
+                    </Link>
+                    <Link
+                      href="/woven/sweater"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      SWEATER
+                    </Link>
+                    <Link
+                      href="/woven/outer"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      OUTERWEAR
+                    </Link>
+                    <Link
+                      href="/others"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      OTHERS PRODUCTS
+                    </Link>
                     {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -240,8 +240,8 @@ const page = () => {
         <div
           className={`${
             openMenu
-            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
-            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
+              ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
+              : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
           }`}
         >
           <Link
@@ -277,13 +277,13 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/kids"
+            href="/gallary/kids"
           >
             Kids Item
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/lingerie"
+            href="/gallary/lingerie"
           >
             Lingerie
           </Link>
@@ -303,7 +303,7 @@ const page = () => {
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/others"
           >
-            Others
+            OTHERS PRODUCTS
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"

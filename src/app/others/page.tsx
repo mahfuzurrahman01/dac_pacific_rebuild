@@ -1,4 +1,4 @@
-"use client"
+"use client";
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import logo from "../../../public/logo/logo.jpg";
 import { AiFillCaretDown, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const page = () => {
-    const [showSubSection, setShowSubSection] = useState(false);
+  const [showSubSection, setShowSubSection] = useState(false);
   const [showDropDown1, setShowDropDown1] = useState<boolean>(false);
   const [showDropDown2, setShowDropDown2] = useState<boolean>(false);
   const onHoverHandle = (id: number) => {
@@ -143,7 +143,7 @@ const page = () => {
                       href="/others"
                       className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                     >
-                      Others
+                      OTHERS PRODUCTS
                     </Link>
                     {/* <Link
                     href="/"
@@ -275,13 +275,13 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/kids"
+            href="/gallary/kids"
           >
             Kids Item
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/lingerie"
+            href="/gallary/lingerie"
           >
             Lingerie
           </Link>
@@ -301,7 +301,7 @@ const page = () => {
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/others"
           >
-            Others
+            OTHERS PRODUCTS
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
@@ -312,7 +312,7 @@ const page = () => {
         </div>
       </div>
       <h1 className="my-5 text-4xl font-bold text-gray-700 text-center">
-        Others
+        OTHERS PRODUCTS
       </h1>
       <div className="flex w-11/12 mx-auto bg-gray-50 rounded justify-center items-center flex-wrap">
         <div className="w-96 h-96 rounded p-2 bg-gray-100">

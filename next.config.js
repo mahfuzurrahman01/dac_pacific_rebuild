@@ -4,7 +4,6 @@ const nextConfig = {
     domains: ['source.unsplash.com','www.smbtex.com','images.unsplash.com','img.freepik.com','media.istockphoto.com','trumpcrownhk.com'],
     unoptimized:true,
   },
-  // output: 'export',
+  output: 'export',
 }
-
 module.exports = nextConfig

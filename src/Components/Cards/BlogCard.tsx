@@ -21,14 +21,12 @@ const BlogCard = () => {
           style={backgroundImageStyle}
         ></div>
         <div className="col-span-12 align-middle lg:col-span-6 lg:h-auto flex flex-col justify-center items-center px-5 py-24">
-          
           <h1 className="uppercase text-5xl mt-2 mb-5" style={myFont2.style}>
             WHY CHOOSE US
           </h1>
           <p className="w-3/4 mx-auto text-center">
-            DAC PACIFIC LTD is an Apparel Buying House, who is dealing
-            with all kinds of apparels customers of different countries in the
-            world.
+            DAC PACIFIC LTD is an Apparel Buying House, who is dealing with all
+            kinds of apparels customers of different countries in the world.
           </p>
           <div className="px-4 py-1 flex flex-col gap-7 mt-10">
             <div className="flex justify-start items-center gap-5">
@@ -41,8 +39,8 @@ const BlogCard = () => {
                   TECHNICAL SUPPORT FOR PRODUCTION
                 </p>
                 <p className="text-gray-600">
-                  At DAC PACIFIC LTD, We provide full technical support
-                  for the production.
+                  At Dac pacific LTD,We provide full technical support for the
+                  production.
                 </p>
               </div>
             </div>
@@ -56,8 +54,8 @@ const BlogCard = () => {
                   QUALITY INSPECTION
                 </p>
                 <p className="text-gray-600">
-                  At DAC PACIFIC LTD, We provide full technical support
-                  for the production.
+                  At DAC PACIFIC LTD, We provide full technical support for the
+                  Quality Inspection.
                 </p>
               </div>
             </div>
@@ -71,8 +69,8 @@ const BlogCard = () => {
                   SECURED ON TIME SHIPMENT
                 </p>
                 <p className="text-gray-600">
-                  At DAC PACIFIC LTD, We provide full technical support
-                  for the production.
+                  At DAC PACIFIC LTD, We provide full technical support for
+                  secured on time shipment.
                 </p>
               </div>
             </div>

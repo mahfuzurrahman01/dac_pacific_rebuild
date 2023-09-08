@@ -153,35 +153,35 @@ const page = () => {
                       KNIT ITEM
                     </button>
                     <Link
-                    href="/woven"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN SHIRTS
-                  </Link>
-                  <Link
-                    href="/woven/bottoms"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN BOTTOMS
-                  </Link>
-                  <Link
-                    href="/woven/sweater"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    SWEATER
-                  </Link>
-                  <Link
-                    href="/woven/outer"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    OUTERWEAR
-                  </Link>
-                  <Link
-                    href="/others"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    Others
-                  </Link>
+                      href="/woven"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN SHIRTS
+                    </Link>
+                    <Link
+                      href="/woven/bottoms"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN BOTTOMS
+                    </Link>
+                    <Link
+                      href="/woven/sweater"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      SWEATER
+                    </Link>
+                    <Link
+                      href="/woven/outer"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      OUTERWEAR
+                    </Link>
+                    <Link
+                      href="/others"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      OTHERS PRODUCTS
+                    </Link>
                     {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -275,8 +275,8 @@ const page = () => {
         <div
           className={`${
             openMenu
-            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
-            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
+              ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
+              : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
           }`}
         >
           <Link
@@ -312,13 +312,13 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/kids"
+            href="/gallary/kids"
           >
             Kids Item
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/lingerie"
+            href="/gallary/lingerie"
           >
             Lingerie
           </Link>
@@ -338,7 +338,7 @@ const page = () => {
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/others"
           >
-            Others
+            OTHERS PRODUCTS
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
@@ -358,7 +358,7 @@ const page = () => {
       >
         <div className="bg-gray-900 w-full h-full bg-opacity-40 flex justify-center items-center flex-col gap-3">
           <h1 className="font-semibold uppercase text-white text-4xl flex justify-center items-center gap-3">
-            TRUMP CROWN
+            TRUMP CROWN (HONG KONG) LIMITED
           </h1>
           <nav
             aria-label="breadcrumb"
@@ -437,24 +437,30 @@ const page = () => {
                   Trump Crown, thrives to be an ultimate sourcing and
                   manufacturing partner for companies in business of Garments
                   and sourcing/consolidation of fabric/trims, commodity division
-                  and furnishings. Our vision and excellence have earned the
-                  company a strong reputation that resonate reliability, quality
-                  and a worldwide recognition of our commitment to supply
-                  products at the best value. The Company, established and
-                  incorporated in, 2010 in Hong Kong is the center of our
+                  n and furnishings. Our vision and excellence have earned the
+                  company a strong reputation n that resonate reliability,
+                  quality and a worldwide recognition of our commitment to
+                  supply products at the best value. The Company, established
+                  and incorporated in, 2010 i n Hong Kong is the center of our
                   network of Manufacturing Plants and Representative Offices
                   throughout Asia and also the gateway to the production giant
-                  People's Republic of China. This infrastructure, along with
+                  People’s RepubliC c of China. This infrastructure, along with
                   our experienced personnel, enables us to provide our buyers
-                  with: e High quality and competitively priced products e
-                  Knowledgeable team of Local representatives, Merchandisers,
-                  Managers and logistics support Jimmy Paryani Jimmy, having 30
-                  years of experience in garment industry believes that there
-                  isa close relationship with Bangladesh and China, Trump Crown
-                  Hong Kong continues to support Bangladesh manufacturers with
-                  its growing garment business. “Trump Crown (Hong Kong) Ltd” is
-                  associated with “Shanta Group” for their Hong Kong sourcing
-                  and Jimmy has been handling its marketing since twenty years.
+                  with: <br />
+                  <span className="font-bold">Jimmy Paryani</span> Jinn my,
+                  having 30 years of experience in garment industry believes
+                  that there is a close relationship with Bangladesh and China,
+                  Tru mp Crown Hong Kong continues to support Bangladesh
+                  manufacturers with its growing garment business. “Trump Crown
+                  (Hong Kong) Ltd” is associated with “Shanta Group” for their
+                  Hong Kong sourcing and Jimmy has been handling its marketing
+                  since twenty years.{" "}
+                  <span className="font-bold">Dinesh Chhugani</span>
+                  Dinesh, the promoter of DAC Pacific (HK) Ltd with offices in
+                  HK, China and Bangladesh, have been supplying and
+                  manufacturing large quantity of Garments and accessories out
+                  of Bangladesh, China, Sri Lanka, Horig Kong and India to USA,
+                  EEC and Indian Subcontinent markets.
                 </p>
               </div>
             </div>
@@ -476,16 +482,24 @@ const page = () => {
                   style={myFont2.style}
                   className="text-3xl font-bold uppercase"
                 >
-                  PRINCIPAL PRODUCTS:
+                  Our Business Activities
                 </h3>
                 <p className="my-6 text-gray-700">
-                  All types of Woven and Knitted Garments, all types of Fabrics
-                  and Garment related accessories, inclusive Pants, Shorts,
-                  Skirts, Blouses, Dresses, Jackets, Blazers, Vest, Rompers,
-                  Jumpers, Overalls and all types of work wear. Knitted Tops,
-                  Leggings and Shorts. All types of garment accessories
-                  inclusive Buttons, Metal Items, Belts, Laces, Lingerie
-                  accessories etc. , India, China, Hong Kong & Far East markets.
+                  Manufacturer, Distributor and Exporter of Ready made Garments,
+                  Fabrics and Garment related accessories, (Inclusive Buttons,
+                  Metal items, Belts, Laces and Lingerie accessories) to USA,
+                  E.E.C, India, Bangladesh, Sri Lanka, South America and Gulf
+                  markets from Hong Kong, China, Ind ia and Bangladesh. We
+                  provide development of new products based on customer
+                  requirements, fashion trends and styles, the latest technical
+                  developments and the creative skills from designers. We offer
+                  a diversified range of products incm ding: Solid dyed Printed
+                  & Yarn-dyed i n Cotton & Blends, Ramie/Linen & Blends, Rayon,
+                  Nylon, Polyester, Corduroy, Chambray & Denim, Velveteen (Piece
+                  dyed & Printed), Knits, Silk and Pocketing Fabrics. Represent
+                  and assist overseas buyers and retail stores as Buying Agents
+                  or Consultants for all the ir sourcing and Q.C. needs in the
+                  markets of China, Bangladesh, India Sri Lanka.
                 </p>
               </div>
             </div>
@@ -513,10 +527,10 @@ const page = () => {
                   All types of Woven and Knitted Garments, all types of Fabrics
                   and Garment related accessories, inclusive Pants, Shorts,
                   Skirts, Blouses, Dresses, Jackets, Blazers, Vest, Rompers,
-                  Jumpers, Overalls and all types of work wear. Knitted Tops,
-                  Leggings and Shorts. All types of garment accessories
-                  inclusive Buttons, Metal Items, Belts, Laces, Lingerie
-                  accessories etc. , India, China, Hong Kong & Far East markets.
+                  Jumpers and all types of work wear. Knitted Tops, Leggings and
+                  Shorts. All types of garment accessories inclusive Buttons,
+                  Metal Items, Belts, Laces, Lingerie accessories etc. , India,
+                  China, Hong Ko ng & Far East markets.
                 </p>
               </div>
             </div>
@@ -538,24 +552,18 @@ const page = () => {
                   style={myFont2.style}
                   className="text-3xl font-bold uppercase"
                 >
-                  Garment Division
+                  COMMODITY DIVISION:
                 </h3>
                 <p className="my-6 text-gray-700">
-                  Manufacturer, Distributor and Exporter of Readymade Garments,
-                  Fabrics and Garment related accessories, (Inclusive Buttons,
-                  Metal items, Belts, Laces and Lingerie accessories) to USA,
-                  E.E.C, India, Bangladesh, Sri Lanka, South America and Gulf
-                  markets from Hong Kong, China, India and Bangladesh. We
-                  provide development of new products based on customer
-                  requirements, fashion trends and styles, the latest technical
-                  developments and the creative skills from designers. We offer
-                  a diversified range of products including: Solid dyed Printed
-                  & Yarn-dyed in Cotton & Blends, Ramie/Linen & Blends, Rayon,
-                  Nylon, Polyester, Corduroy, Chambray & Denim, Velveteen (Piece
-                  dyed & Printed), Knits, Silk and Pocketing Fabrics. Represent
-                  and assist overseas buyers and retail stores as Buying Agents
-                  or Consultants for all their sourcing and Q.C. needs in the
-                  markets of China, Bangladesh, India Sri Lanka.
+                  Trump Crown is an entrepreneurial company focused on
+                  merchandising physical commodities. We position ourselves to
+                  provide value th rough merchandising services, strategic
+                  assets and investments. We trade food products, whole grains,
+                  feed ingredients, agriculture products, emulsifying and
+                  stabilizing agents and many other commodities within North
+                  America and internationally. We have grown into a strong
+                  trading company as a result of our experience, relationships
+                  and service.
                 </p>
               </div>
             </div>
@@ -565,36 +573,35 @@ const page = () => {
               data-aos-duration="500"
               className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row"
             >
-              <Image
-                src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29tcGFueXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-                className=" bg-gray-500 aspect-video"
-                width={600}
-                height={450}
-              />
               <div className="flex flex-col justify-center flex-1 p-6 bg-gray-200">
-                <h3
-                  style={myFont2.style}
-                  className="text-3xl font-bold uppercase"
-                >
-                  COMMODITY DIVISION:
-                </h3>
-                <p className="my-6 text-gray-700">
-                  Trump Crown is an entrepreneurial company focused on
-                  merchandising physical commodities. We position ourselves to
-                  provide value through merchandising services, strategic assets
-                  and investments. We trade food products, whole grains, feed
-                  ingredients, agriculture products, emulsifying and stabilizing
-                  agents and many other commodities within North America and
-                  internationally. We have grown into a strong trading company
-                  as a result of our experience, relationships and service.
-                </p>
+                <h1 className="font-bold text-xl">HONG KONG HEAD OFFICE:</h1>
+                <address>
+                  <p>
+                    308-9, 3/f., Wing Fat Industrial Building, <br /> 12, Wang
+                    Tai Road, <br />
+                    Kowloon Bay, Kowloon, <br /> Hong Kong Tel: (852) 2798 7213{" "}
+                    <br /> Fax: (852) 2798 7151 <br /> Email:
+                    jimmy@trumpcrown.com.hk
+                  </p>
+                </address>
+              </div>
+              <div className="flex flex-col justify-center flex-1 p-6 bg-gray-200">
+                <h1 className="font-bold text-xl">Bangladesh office</h1>
+                <address>
+                  <p>
+                    Trump Crow'n (BD) Ltd. <br /> (Estd. 1992 under DAC Pacific
+                    Ltd) <br />
+                    House No. 447, Road # 7 (East Side) <br />
+                    D.O.H.S. Baridhara, Dhaka Cantonment, Dhaka — 1206, <br />
+                    Bangladesh Tel: +(8802) 8414994, 8417985, 8412234 Fax:
+                    +(8802) 8416263 <br /> Email:dinesh@trumpcrown.com.hk
+                  </p>
+                </address>
               </div>
             </div>
           </div>
         </section>
       </div>
-
     </div>
   );
 };

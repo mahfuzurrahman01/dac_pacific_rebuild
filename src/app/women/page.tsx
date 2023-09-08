@@ -145,7 +145,7 @@ const page = () => {
                       href="/others"
                       className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                     >
-                      Others
+                      OTHERS PRODUCTS
                     </Link>
                     {/* <Link
                     href="/"
@@ -277,13 +277,13 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/kids"
+            href="/gallary/kids"
           >
             Kids Item
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/lingerie"
+            href="/gallary/lingerie"
           >
             Lingerie
           </Link>
@@ -303,7 +303,7 @@ const page = () => {
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/others"
           >
-            Others
+            OTHERS PRODUCTS
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
@@ -314,7 +314,7 @@ const page = () => {
         </div>
       </div>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        LADIES DRESS
+        WOMEN'S DRESS
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
@@ -357,7 +357,7 @@ const page = () => {
         </div>
       </section>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        LADIES WOVEN HOODY JACKET
+        WOMEN'S WOVEN HOODY JACKET
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
@@ -392,7 +392,7 @@ const page = () => {
         </div>
       </section>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        LADIES POLO SHIRT
+        WOMEN'S POLO SHIRT
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
@@ -435,7 +435,7 @@ const page = () => {
         </div>
       </section>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        LADIES SHIRT
+        WOMEN'S SHIRT
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
@@ -478,7 +478,7 @@ const page = () => {
         </div>
       </section>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        LADIES SPORTSWEAR
+        WOMEN'S SPORTSWEAR
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">

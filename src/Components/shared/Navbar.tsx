@@ -143,7 +143,7 @@ const Navbar = () => {
                     href="/others"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
-                    Others
+                    OTHERS PRODUCTS
                   </Link>
                   {/* <Link
                     href="/"
@@ -275,13 +275,13 @@ const Navbar = () => {
         </Link>
         <Link
           className="font-semibold hover:text-sky-600 duration-300 uppercase"
-          href="/kids"
+          href="/gallary/kids"
         >
           Kids Item
         </Link>
         <Link
           className="font-semibold hover:text-sky-600 duration-300 uppercase"
-          href="/lingerie"
+          href="/gallary/lingerie"
         >
           Lingerie
         </Link>
@@ -301,7 +301,7 @@ const Navbar = () => {
           className="font-semibold hover:text-sky-600 duration-300 uppercase"
           href="/others"
         >
-          Others
+          OTHERS PRODUCTS
         </Link>
         <Link
           className="font-semibold hover:text-sky-600 duration-300 uppercase"

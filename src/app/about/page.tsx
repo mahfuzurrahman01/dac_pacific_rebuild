@@ -153,35 +153,35 @@ const page = () => {
                       KNIT ITEM
                     </button>
                     <Link
-                    href="/woven"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN SHIRTS
-                  </Link>
-                  <Link
-                    href="/woven/bottoms"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN BOTTOMS
-                  </Link>
-                  <Link
-                    href="/woven/sweater"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    SWEATER
-                  </Link>
-                  <Link
-                    href="/woven/outer"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    OUTERWEAR
-                  </Link>
-                  <Link
-                    href="/others"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    Others
-                  </Link>
+                      href="/woven"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN SHIRTS
+                    </Link>
+                    <Link
+                      href="/woven/bottoms"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN BOTTOMS
+                    </Link>
+                    <Link
+                      href="/woven/sweater"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      SWEATER
+                    </Link>
+                    <Link
+                      href="/woven/outer"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      OUTERWEAR
+                    </Link>
+                    <Link
+                      href="/others"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      OTHERS PRODUCTS
+                    </Link>
                     {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -275,8 +275,8 @@ const page = () => {
         <div
           className={`${
             openMenu
-            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
-            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
+              ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
+              : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
           }`}
         >
           <Link
@@ -312,13 +312,13 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/kids"
+            href="/gallary/kids"
           >
             Kids Item
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
-            href="/lingerie"
+            href="/gallary/lingerie"
           >
             Lingerie
           </Link>
@@ -338,7 +338,7 @@ const page = () => {
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/others"
           >
-            Others
+            OTHERS PRODUCTS
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
@@ -499,8 +499,12 @@ const page = () => {
                   Certifications
                 </h3>
                 <p className="my-6 text-gray-700">
-                  DAC PACIFIC <span className="lowercase">ROOM #308-309, WING FAT INDUSTRIAL
-                  BUILDING, 12, WANG TAI ROAD, KOWLOON BAY, KOWLOON, HONG KONG</span> Has been independently assessed and is in compliant with
+                  DAC PACIFIC{" "}
+                  <span className="lowercase">
+                    ROOM #308-309, WING FAT INDUSTRIAL BUILDING, 12, WANG TAI
+                    ROAD, KOWLOON BAY, KOWLOON, HONG KONG
+                  </span>{" "}
+                  Has been independently assessed and is in compliant with
                   requirement of: ISO 9001:2015 (Quality Management System) For
                   the following Scope of Activities: EXPORT & IMPORT.
                 </p>
@@ -555,19 +559,19 @@ const page = () => {
                 WHY WE EXIST
               </h1>
               <p className="my-2">
-                We have been working with RMG sector. We
-                do have a very good understanding of this trade. We have working
-                with all kinds of textile customer’s, we also understand the
-                different requirement for various customers. For this reason, we
-                can offer you very good service, good quality products at market
-                prices, and with a sincere ambition to make your business in
-                Bangladesh to grow and become smooth and hassle-free.
-                Consequently, we have been working with top class Quality
-                customers, mainly European, in fashion, promotion and corporate
-                wear, work wear, sportswear (upon specific request we will
-                gladly list our reference customers). Besides let us just say
-                that you’ll be amazed to find out how many valuable European
-                brands are already buying in Bangladesh.
+                We have been working with RMG sector. We do have a very good
+                understanding of this trade. We have working with all kinds of
+                textile customer’s, we also understand the different requirement
+                for various customers. For this reason, we can offer you very
+                good service, good quality products at market prices, and with a
+                sincere ambition to make your business in Bangladesh to grow and
+                become smooth and hassle-free. Consequently, we have been
+                working with top class Quality customers, mainly European, in
+                fashion, promotion and corporate wear, work wear, sportswear
+                (upon specific request we will gladly list our reference
+                customers). Besides let us just say that you’ll be amazed to
+                find out how many valuable European brands are already buying in
+                Bangladesh.
               </p>
             </div>
           </div>
