@@ -130,17 +130,23 @@ const page = () => {
                       WOVEN BOTTOMS
                     </Link>
                     <Link
-                    href="/woven/sweater"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    SWEATER
-                  </Link>
-                  <Link
-                    href="/woven/outer"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    OUTERWEAR
-                  </Link>
+                      href="/woven/sweater"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      SWEATER
+                    </Link>
+                    <Link
+                      href="/woven/outer"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      OUTERWEAR
+                    </Link>
+                    <Link
+                      href="/others"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      Others
+                    </Link>
                     {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -234,8 +240,8 @@ const page = () => {
         <div
           className={`${
             openMenu
-            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
-            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
+              ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
+              : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
           }`}
         >
           <Link
@@ -263,14 +269,12 @@ const page = () => {
           >
             Management
           </Link>
-
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/trump"
           >
             Trump crown
           </Link>
-
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/kids"
@@ -297,6 +301,12 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/others"
+          >
+            Others
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/contact"
           >
             Contact
@@ -304,84 +314,191 @@ const page = () => {
         </div>
       </div>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        WOVEN BOTTOMS
+        MENS WOVEN BOTTOMS
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
           <Image
             width={200}
             height={300}
-            src={
-              "https://www.smbtex.com/images/product/Woven%20Bottom/woven-bottom%20(1).jpg"
-            }
+            src={"/mens/bottoms1.jpg"}
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+          />
+          
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms3.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/Woven%20Bottom/woven-bottom%20(2).jpg"
-            }
+            src={"/mens/bottoms4.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/Woven%20Bottom/woven-bottom%20(3).jpg"
-            }
+            src={"/mens/bottoms5.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/Woven%20Bottom/woven-bottom%20(4).jpg"
-            }
+            src={"/mens/bottoms6.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/Woven%20Bottom/woven-bottom%20(6).jpg"
-            }
+            src={"/mens/bottoms7.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/Woven%20Bottom/woven-bottom%20(8).jpg"
-            }
+            src={"/mens/bottoms8.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/Woven%20Bottom/woven-bottom%20(9).jpg"
-            }
+            src={"/mens/bottoms9.jpg"}
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/Woven%20Bottom/woven-bottom%20(10).jpg"
-            }
+            src={"/mens/bottoms10.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms11.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms12.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms13.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms14.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms15.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms16.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms17.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms18.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/mens/bottoms19.jpg"}
           />
         </div>
       </section>
+      <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
+        WOMENS WOVEN BOTTOMS
+      </h1>
+      <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
+        <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
+          <Image
+            width={200}
+            height={300}
+            src={"/womens/wwb1.jpg"}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+          />
+          
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/womens/wwb3.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/womens/wwb4.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/womens/wwb5.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/womens/wwb6.jpg"}
+          />
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/womens/wwb7.jpg"}
+          />
+        
+        </div>
+      </section>
+      
     </div>
   );
 };

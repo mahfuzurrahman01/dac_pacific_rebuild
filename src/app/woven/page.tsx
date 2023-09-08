@@ -130,17 +130,23 @@ const page = () => {
                       WOVEN BOTTOMS
                     </Link>
                     <Link
-                    href="/woven/sweater"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    SWEATER
-                  </Link>
-                  <Link
-                    href="/woven/outer"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    OUTERWEAR
-                  </Link>
+                      href="/woven/sweater"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      SWEATER
+                    </Link>
+                    <Link
+                      href="/woven/outer"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      OUTERWEAR
+                    </Link>
+                    <Link
+                      href="/others"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      Others
+                    </Link>
                     {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -234,8 +240,8 @@ const page = () => {
         <div
           className={`${
             openMenu
-            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
-            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
+              ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
+              : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
           }`}
         >
           <Link
@@ -263,7 +269,6 @@ const page = () => {
           >
             Management
           </Link>
-
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/trump"
@@ -296,6 +301,12 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/others"
+          >
+            Others
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/contact"
           >
             Contact
@@ -303,7 +314,7 @@ const page = () => {
         </div>
       </div>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        WOVEN SHIRTS
+        MENS WOVEN SHIRTS 
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
@@ -314,7 +325,7 @@ const page = () => {
               "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(1).jpg"
             }
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}
@@ -379,6 +390,37 @@ const page = () => {
               "https://www.smbtex.com/images/product/woven-shirts/woven-shirts%20(13).jpg"
             }
           />
+        </div>
+      </section>
+      <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
+        WOMEN'S WOVEN SHIRTS
+      </h1>
+      <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
+        <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
+          <Image
+            width={200}
+            height={300}
+            src={"/womens/wws1.jpg"}
+            alt=""
+            className="w-full h-96 rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+          />
+          <Image
+            width={200}
+            height={300}
+            src={"/womens/wws2.jpg"}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+          />
+          
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"/womens/wws3.jpg"}
+          />
+         
+        
         </div>
       </section>
     </div>

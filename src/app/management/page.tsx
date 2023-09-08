@@ -171,6 +171,12 @@ const page = () => {
                   >
                     OUTERWEAR
                   </Link>
+                  <Link
+                    href="/others"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    Others
+                  </Link>
                     {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -322,6 +328,12 @@ const page = () => {
             href="/women"
           >
             Women's Item
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/others"
+          >
+            Others
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"

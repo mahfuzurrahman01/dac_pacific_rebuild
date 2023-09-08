@@ -118,29 +118,35 @@ const page = () => {
                       KNIT ITEM
                     </button>
                     <Link
-                    href="/woven"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN SHIRTS
-                  </Link>
-                  <Link
-                    href="/woven/bottoms"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    WOVEN BOTTOMS
-                  </Link>
-                  <Link
-                    href="/woven/sweater"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    SWEATER
-                  </Link>
-                  <Link
-                    href="/woven/outer"
-                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                  >
-                    OUTERWEAR
-                  </Link>
+                      href="/woven"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN SHIRTS
+                    </Link>
+                    <Link
+                      href="/woven/bottoms"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      WOVEN BOTTOMS
+                    </Link>
+                    <Link
+                      href="/woven/sweater"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      SWEATER
+                    </Link>
+                    <Link
+                      href="/woven/outer"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      OUTERWEAR
+                    </Link>
+                    <Link
+                      href="/others"
+                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                    >
+                      Others
+                    </Link>
                     {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -234,8 +240,8 @@ const page = () => {
         <div
           className={`${
             openMenu
-            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
-            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
+              ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
+              : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
           }`}
         >
           <Link
@@ -295,6 +301,12 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/others"
+          >
+            Others
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/contact"
           >
             Contact
@@ -313,7 +325,7 @@ const page = () => {
               "https://www.smbtex.com/images/product/knit-Item/Womens/Dress/knit-women-dress%20(1).png"
             }
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}
@@ -354,7 +366,7 @@ const page = () => {
             height={300}
             src={"/womens/wh1.jpg"}
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}
@@ -387,101 +399,124 @@ const page = () => {
           <Image
             width={200}
             height={300}
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(1).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(1).png"
+            }
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(2).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(2).png"
+            }
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(3).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(3).png"
+            }
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(4).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Polo%20Shirt/knit-Ladies-Polo-Shirt%20(4).png"
+            }
           />
         </div>
       </section>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-      LADIES SHIRT
+        LADIES SHIRT
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
           <Image
             width={200}
             height={300}
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(1).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(1).png"
+            }
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(2).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(2).png"
+            }
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(3).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(3).png"
+            }
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(4).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Shirt/knit-Ladies-Shirt%20(4).png"
+            }
           />
         </div>
       </section>
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-
-LADIES SPORTSWEAR
+        LADIES SPORTSWEAR
       </h1>
       <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
           <Image
             width={200}
             height={300}
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(1).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(1).png"
+            }
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(2).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(2).png"
+            }
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(3).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(3).png"
+            }
           />
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={"https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(4).png"}
+            src={
+              "https://www.smbtex.com/images/product/knit-Item/Womens/Ladies%20Sportswear/knit-sports-wear%20(4).png"
+            }
           />
         </div>
       </section>

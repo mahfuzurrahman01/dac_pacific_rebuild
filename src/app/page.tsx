@@ -160,25 +160,54 @@ export default function Home() {
                   >
                     WOVEN SHIRTS
                   </Link>
-                    <Link
+                  <Link
                     href="/woven/bottoms"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
                     WOVEN BOTTOMS
                   </Link>
-                    <Link
+                  <Link
                     href="/woven/sweater"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
                     SWEATER
                   </Link>
-                    <Link
+                  <Link
                     href="/woven/outer"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
                     OUTERWEAR
                   </Link>
-    
+                  <Link
+                    href="/others"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    Others
+                  </Link>
+                    {/* <Link
+                    href="/"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    item2
+                  </Link>
+                  <Link
+                    href="/"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    item2
+                  </Link>
+                  <Link
+                    href="/"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    item2
+                  </Link>
+                  <Link
+                    href="/"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    item2
+                  </Link> */}
                   </div>
                 )}
                 {showSubSection && (
@@ -306,6 +335,12 @@ export default function Home() {
             href="/women"
           >
             Women's Item
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/others"
+          >
+            Others
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
@@ -609,7 +644,7 @@ export default function Home() {
                 EMBELLISHMENT & ACCESSORIES DEVELOPMENT
               </h3>
               <p className="text-gray-400">
-                DAC PACIFIC LTD LIMITED is experienced in design and development
+                DAC PACIFIC LTD is experienced in design and development
                 for offering highly detailed embroideries and embellishments to
                 enhance any type of garment.
               </p>

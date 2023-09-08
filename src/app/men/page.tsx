@@ -35,7 +35,7 @@ const page = () => {
   const [showSubSection, setShowSubSection] = useState(false);
   return (
     <div>
-      <div className="bg-gray-50 p-4 w-full">
+     <div className="bg-gray-50 p-4 w-full">
         <header className=" lg:w-4/5 w-11/12 mx-auto text-gray-100">
           {/* this menu will show only on large screen  */}
           <div className="container lg:flex hidden justify-between h-16 mx-auto items-center">
@@ -140,6 +140,12 @@ const page = () => {
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
                     OUTERWEAR
+                  </Link>
+                  <Link
+                    href="/others"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    Others
                   </Link>
                     {/* <Link
                     href="/"
@@ -295,6 +301,12 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/others"
+          >
+            Others
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/contact"
           >
             Contact
@@ -311,7 +323,7 @@ const page = () => {
             height={300}
             src={"/mens/hoddy1.jpg"}
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}
@@ -402,7 +414,7 @@ const page = () => {
             height={300}
             src={"/mens/pant1.jpg"}
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}
@@ -462,6 +474,7 @@ const page = () => {
           />
         </div>
       </section>
+     
       <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
         MENS JOGGERS
       </h1>
@@ -472,7 +485,7 @@ const page = () => {
             height={300}
             src={"/mens/joggers1.jpg"}
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}
@@ -549,7 +562,7 @@ const page = () => {
             height={300}
             src={"/mens/polo1.jpg"}
             alt=""
-            className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square"
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
           />
           <Image
             width={200}

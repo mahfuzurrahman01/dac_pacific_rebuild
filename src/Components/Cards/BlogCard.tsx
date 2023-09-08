@@ -26,7 +26,7 @@ const BlogCard = () => {
             WHY CHOOSE US
           </h1>
           <p className="w-3/4 mx-auto text-center">
-            DAC PACIFIC LTD LIMITED is an Apparel Buying House, who is dealing
+            DAC PACIFIC LTD is an Apparel Buying House, who is dealing
             with all kinds of apparels customers of different countries in the
             world.
           </p>
@@ -41,7 +41,7 @@ const BlogCard = () => {
                   TECHNICAL SUPPORT FOR PRODUCTION
                 </p>
                 <p className="text-gray-600">
-                  At DAC PACIFIC LTD Limited, We provide full technical support
+                  At DAC PACIFIC LTD, We provide full technical support
                   for the production.
                 </p>
               </div>
@@ -56,7 +56,7 @@ const BlogCard = () => {
                   QUALITY INSPECTION
                 </p>
                 <p className="text-gray-600">
-                  At DAC PACIFIC LTD Limited, We provide full technical support
+                  At DAC PACIFIC LTD, We provide full technical support
                   for the production.
                 </p>
               </div>
@@ -71,7 +71,7 @@ const BlogCard = () => {
                   SECURED ON TIME SHIPMENT
                 </p>
                 <p className="text-gray-600">
-                  At DAC PACIFIC LTD Limited, We provide full technical support
+                  At DAC PACIFIC LTD, We provide full technical support
                   for the production.
                 </p>
               </div>

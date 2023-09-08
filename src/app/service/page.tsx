@@ -52,7 +52,7 @@ const page = () => {
   const [showSubSection, setShowSubSection] = useState(false);
   return (
     <div className="relative">
-      <div className="bg-gray-50 p-4 w-full">
+     <div className="bg-gray-50 p-4 w-full">
         <header className=" lg:w-4/5 w-11/12 mx-auto text-gray-100">
           {/* this menu will show only on large screen  */}
           <div className="container lg:flex hidden justify-between h-16 mx-auto items-center">
@@ -157,6 +157,12 @@ const page = () => {
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
                   >
                     OUTERWEAR
+                  </Link>
+                  <Link
+                    href="/others"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    Others
                   </Link>
                     {/* <Link
                     href="/"
@@ -312,6 +318,12 @@ const page = () => {
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/others"
+          >
+            Others
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/contact"
           >
             Contact
@@ -408,7 +420,7 @@ const page = () => {
             CLIENTS
           </h4>
           <p className="text-cyan-600 font-semibold">
-            Main Market: Japan, Europe, UK & USA
+            Main Market: USA, EUROPE ,UK & AUSTRALIA
           </p>
         </div>
       </div>
@@ -543,10 +555,7 @@ const page = () => {
               <p className="text-white text-center mt-5 text-lg font-semibold">
                 As per market requirement has developed all type of fancy washes
                 like, Enzyme wash, Stone wash, Bleach wash, Tinting, Over
-                dyeing, Sandblasting, Scraping, Whickering, Destroy, Grinding,
-                Tagging Crinkle ,Resin ,PP etc Also keeping in mind the
-                environmental problem new plant has started with full water
-                treatment plant.
+                dyeing, Sandblasting, Scraping, Whispering.
               </p>
             )}
           </div>
@@ -569,9 +578,9 @@ const page = () => {
                     <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                   </svg>
                   <p className="px-6 py-1 text-lg italic">
-                    All kinds of T-shirts, Polo Shirts, Tank top, Pajama set,
-                    Nightwear, Home wear. All Kinds of Jacket on Polar Fleece,
-                    Micro Fleece, Terry, Sweat, Bonded Fleece, AOP Fleece.
+                    All Kinds of Woven Items : Jackets, Vest,Shirts, Shorts,
+                    Pants, Workwear etc. Knit items: Fleece Jackets & Vests,
+                    Bonded fabrics made Jackets etc.
                   </p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

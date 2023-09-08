@@ -83,11 +83,11 @@ const Navbar = () => {
                     MANAGEMENT
                   </Link>
                   <Link
-                      href="/trump"
-                      className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
-                    >
-                      TRUMP CROWN
-                    </Link>
+                    href="/trump"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 p-2"
+                  >
+                    TRUMP CROWN
+                  </Link>
                 </div>
               )}
             </div>
@@ -115,6 +115,36 @@ const Navbar = () => {
                   >
                     KNIT ITEM
                   </button>
+                  <Link
+                    href="/woven"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    WOVEN SHIRTS
+                  </Link>
+                  <Link
+                    href="/woven/bottoms"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    WOVEN BOTTOMS
+                  </Link>
+                  <Link
+                    href="/woven/sweater"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    SWEATER
+                  </Link>
+                  <Link
+                    href="/woven/outer"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    OUTERWEAR
+                  </Link>
+                  <Link
+                    href="/others"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    Others
+                  </Link>
                   {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -208,8 +238,8 @@ const Navbar = () => {
       <div
         className={`${
           openMenu
-          ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
-          : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
+            ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
+            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
         }`}
       >
         <Link
@@ -239,7 +269,7 @@ const Navbar = () => {
         </Link>
         <Link
           className="font-semibold hover:text-sky-600 duration-300 uppercase"
-          href="/management"
+          href="/trump"
         >
           Trump crown
         </Link>
@@ -266,6 +296,12 @@ const Navbar = () => {
           href="/women"
         >
           Women's Item
+        </Link>
+        <Link
+          className="font-semibold hover:text-sky-600 duration-300 uppercase"
+          href="/others"
+        >
+          Others
         </Link>
         <Link
           className="font-semibold hover:text-sky-600 duration-300 uppercase"

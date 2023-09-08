@@ -153,29 +153,35 @@ const page = () => {
                       KNIT ITEM
                     </button>
                     <Link
-                      href="/woven"
-                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                    >
-                      WOVEN SHIRTS
-                    </Link>
-                    <Link
-                      href="/woven/bottoms"
-                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                    >
-                      WOVEN BOTTOMS
-                    </Link>
-                    <Link
-                      href="/woven/sweater"
-                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                    >
-                      SWEATER
-                    </Link>
-                    <Link
-                      href="/woven/outer"
-                      className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
-                    >
-                      OUTERWEAR
-                    </Link>
+                    href="/woven"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    WOVEN SHIRTS
+                  </Link>
+                  <Link
+                    href="/woven/bottoms"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    WOVEN BOTTOMS
+                  </Link>
+                  <Link
+                    href="/woven/sweater"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    SWEATER
+                  </Link>
+                  <Link
+                    href="/woven/outer"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    OUTERWEAR
+                  </Link>
+                  <Link
+                    href="/others"
+                    className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
+                  >
+                    Others
+                  </Link>
                     {/* <Link
                     href="/"
                     className="hover:text-sky-600 duration-300 border-b border-gray-300 py-1 px-4 text-center"
@@ -270,7 +276,7 @@ const page = () => {
           className={`${
             openMenu
             ? "w-full flex flex-col justify-center items-center translate-y-3 absolute shadow-xl shadow-gray-300 bg-gray-50 text-gray-900 left-0 duration-500 z-50 min-h-screen max-h-screen gap-5"
-              : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
+            : "w-full  flex flex-col justify-center translate-y-[-300px] left-0 absolute items-center shadow-xl shadow-gray-300 bg-gray-50  text-gray-900 duration-500 -z-50"
           }`}
         >
           <Link
@@ -302,7 +308,7 @@ const page = () => {
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
             href="/trump"
           >
-            trump
+            Trump crown
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
@@ -327,6 +333,12 @@ const page = () => {
             href="/women"
           >
             Women's Item
+          </Link>
+          <Link
+            className="font-semibold hover:text-sky-600 duration-300 uppercase"
+            href="/others"
+          >
+            Others
           </Link>
           <Link
             className="font-semibold hover:text-sky-600 duration-300 uppercase"
@@ -487,14 +499,10 @@ const page = () => {
                   Certifications
                 </h3>
                 <p className="my-6 text-gray-700">
-                  DAC PACIFIC LIMITED ROOM #308-309, WING FAT INDUSTRIAL
-                  BUILDING, 12, WANG TAI ROAD, KOWLOON BAY, KOWLOON, HONG KONG
-                  Cad Has been independently assessed and is in compliant with
+                  DAC PACIFIC <span className="lowercase">ROOM #308-309, WING FAT INDUSTRIAL
+                  BUILDING, 12, WANG TAI ROAD, KOWLOON BAY, KOWLOON, HONG KONG</span> Has been independently assessed and is in compliant with
                   requirement of: ISO 9001:2015 (Quality Management System) For
-                  the following Scope of Activities: EXPORT & IMPORT OF
-                  READYMADE GARMENTS, TEXTILES, GARMENT ACCESSORIES, GARMENT
-                  MACHINERIES, JUTE BAGS, JUTE PRODUCTS AND CHEMICALS & SIMILAR
-                  PRODUCTS.AAAAAAAAAAAAAF
+                  the following Scope of Activities: EXPORT & IMPORT.
                 </p>
               </div>
             </div>

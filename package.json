@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve@latest out",
+ 
+    "start": "npm start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -32,3 +33,4 @@
     "@types/aos": "^3.0.4"
   }
 }
+  

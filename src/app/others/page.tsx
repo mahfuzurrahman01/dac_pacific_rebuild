@@ -1,13 +1,13 @@
+"use client"
 /* eslint-disable react-hooks/rules-of-hooks */
-
 /* eslint-disable react/no-unescaped-entities */
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import logo from "../../../../public/logo/logo.jpg";
-import { AiFillCaretDown, AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import logo from "../../../public/logo/logo.jpg";
+import { AiFillCaretDown, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const page = () => {
+    const [showSubSection, setShowSubSection] = useState(false);
   const [showDropDown1, setShowDropDown1] = useState<boolean>(false);
   const [showDropDown2, setShowDropDown2] = useState<boolean>(false);
   const onHoverHandle = (id: number) => {
@@ -31,8 +31,6 @@ const page = () => {
   const menuBarHandle = () => {
     setOpenMenu(!openMenu);
   };
-
-  const [showSubSection, setShowSubSection] = useState(false);
   return (
     <div>
       <div className="bg-gray-50 p-4 w-full">
@@ -313,85 +311,101 @@ const page = () => {
           </Link>
         </div>
       </div>
-      <h1 className="uppercase font-serif font-bold text-center text-gray-700 text-xl py-5">
-        SWEATER
+      <h1 className="my-5 text-4xl font-bold text-gray-700 text-center">
+        Others
       </h1>
-      <section className="py-6 bg-gray-100 text-gray-50 w-4/5 mx-auto">
-        <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
-          <Image
-            width={200}
-            height={300}
-            src={
-              "https://www.smbtex.com/images/product/sweater/SMB-Sweater-Men%20(1).jpg"
-            }
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-          />
+      <div className="flex w-11/12 mx-auto bg-gray-50 rounded justify-center items-center flex-wrap">
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
           <Image
             width={200}
             height={300}
             alt=""
             className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/sweater/SMB-Sweater-Men%20(2).jpg"
-            }
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/sweater/SMB-Sweater-Men%20(3).jpg"
-            }
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/sweater/SMB-Sweater-Men%20(4).jpg"
-            }
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/sweater/SMB-Sweater-Men%20(9).jpg"
-            }
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/sweater/SMB-Sweater-Men%20(5).jpg"
-            }
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/sweater/SMB-Sweater-Men%20(6).jpg"
-            }
-          />
-          <Image
-            width={200}
-            height={300}
-            alt=""
-            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
-            src={
-              "https://www.smbtex.com/images/product/sweater/SMB-Sweater-Men%20(8).jpg"
-            }
+            src={"others/others1.jpg"}
           />
         </div>
-      </section>
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"others/others2.jpg"}
+          />
+        </div>
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"others/others3.jpg"}
+          />
+        </div>
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"others/others4.jpg"}
+          />
+        </div>
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"others/others5.jpg"}
+          />
+        </div>
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"others/others6.jpg"}
+          />
+        </div>
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"others/others7.jpg"}
+          />
+        </div>
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"others/others8.jpg"}
+          />
+        </div>
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"others/others9.jpg"}
+          />
+        </div>
+        <div className="w-96 h-96 rounded p-2 bg-gray-100">
+          <Image
+            width={200}
+            height={300}
+            alt=""
+            className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square"
+            src={"others/others10.jpg"}
+          />
+        </div>
+      </div>
     </div>
   );
 };
